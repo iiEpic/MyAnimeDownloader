@@ -1,0 +1,9 @@
+{
+    "defaultOutputLocation": false,
+    "episodePadding": 2,
+    "includeShowDesc": true,
+    "saveDownloadLocation": true,
+    "saveFormat": "{show}-S{season}E{episode}-{desc}",
+    "seasonPadding": 2,
+    "useKnownDownloadLocation": true
+}
