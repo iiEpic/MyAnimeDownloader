@@ -7,6 +7,7 @@ __email__ = "epicunknown@gmail.com"
 """
 
 import os
+import sys
 import json
 
 
@@ -14,7 +15,7 @@ class OutputSaver:
 
     def __init__(self):
         self.savedLocation = {}
-        self.path = 'tools' + os.sep + 'savedLocations.json'
+        self.path = sys.argv[0].replace('__main__.py','') + 'tools' + os.sep + 'savedLocations.json'
         # Does settings.json file exist?
         if os.path.exists(self.path):
             # Load up the settings
@@ -32,8 +33,7 @@ class OutputSaver:
             return self.savedLocation[show_name]
 
     def set_location(self, show_name, location):
-        if show_name in self.savedLocation:
-            self.savedLocation[show_name] = location
-            file = open(self.path, 'w')
-            file.write(json.dumps(self.savedLocation, indent=4, sort_keys=True))
-            file.close()
+        self.savedLocation[show_name] = location
+        file = open(self.path, 'w')
+        file.write(json.dumps(self.savedLocation, indent=4, sort_keys=True))
+        file.close()

@@ -43,7 +43,7 @@ class Main:
         parser.add_argument('-u', '--username', nargs=1, help='Indicates username for a website.')
         parser.add_argument('-r', '--resolution', nargs=1, help='Inputs the resolution to look for.', default='720')
         parser.add_argument('-l', '--language', nargs=1, help='Selects the language for the show.', default='Japanese')
-        parser.add_argument('-se', '--season', nargs=1, help='Specifies what season to download.')
+        parser.add_argument('-se', '--season', nargs=1, help='Specifies what season to download.', default='All')
         parser.add_argument('--skip', action='store_true', help='skips the video download and downloads only subs.')
         parser.add_argument('-nl', '--nologin', action='store_true', help='Skips login for websites.')
         parser.add_argument('-o', '--output', nargs=1, help='Specifies the directory of which to save the files.')

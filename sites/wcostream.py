@@ -58,9 +58,9 @@ class WCOStream(object):
             if self.settings.get_setting('useKnownDownloadLocation'):
                 if anime_name in self.outputsaver.savedLocation:
                     self.output = self.outputsaver.get_location(anime_name)
-            if self.settings.get_setting('defaultOutputLocation') and self.output is None:
+            if self.settings.get_setting('defaultOutputLocation'):
                 self.output = self.settings.get_setting('defaultOutputLocation')
-            else:
+            if self.output is None:
                 self.output = os.path.abspath("Output" + os.sep + str(anime_name) + os.sep)
                 if not os.path.exists("Output"):
                     os.makedirs("Output")
@@ -71,7 +71,7 @@ class WCOStream(object):
                 self.output = self.output[:-1]
             if self.output == ".":
                 self.output = os.getcwd()
-            elif self.settings.get_setting('saveDownloadLocation'):
+            if self.settings.get_setting('saveDownloadLocation'):
                 self.output.translate(str.maketrans({'\\': os.sep, '/': os.sep}))
                 self.outputsaver.set_location(anime_name, self.output)
         if not os.path.exists(self.output):
