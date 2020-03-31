@@ -112,7 +112,6 @@ class Main:
             verify = Verify(args.__dict__)
             if verify.isVerified():
                 # It is a website we support. Lets use it
-                # Test if we require a login to download from that website
                 if verify.getWebsite() == 'WCO':
                     sites.wcostream.WCOStream(args.__dict__)
                 if verify.getWebsite() == 'Crunchyroll':

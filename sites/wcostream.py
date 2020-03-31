@@ -2,12 +2,15 @@
 # -*- coding: utf-8 -*-
 
 import os
+import sys
 import re
 import requests
 import base64
 import urllib3
 from bs4 import BeautifulSoup
-# from Downloader import *
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from downloader import *
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -18,6 +21,7 @@ class WCOStream(object):
 
     def __init__(self, args):
         # Define our variables
+        self.dl = Downloader()
         self.url = args['input'][0]
         self.resolution = args['resolution']
         self.logger = args['logger']
@@ -124,6 +128,13 @@ class WCOStream(object):
             download_url = download_url[1][1]
         show_info = self.info_extractor(extra)
         output = self.check_output(show_info[0])
+        args = []
+        args.append(download_url)
+        args.append(output)
+        args.append(self.header)
+        args.append(show_info)
+        args.append(self.settings)
+        self.dl.wco_dl(args)
         #Downloader(download_url=download_url, output=output, header=self.header,
         #           show_info=show_info, settings=self.settings)
 
