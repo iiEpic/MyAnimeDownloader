@@ -2,4 +2,4 @@
 
 Download anime from multiple websites using one program!
 
-Go check out the wiki for more info! (In the process of updating it all!)
+Go check out the [wiki](https://github.com/EpicUnknown/MyAnimeDownloader/wiki) for more info! (In the process of updating it all!)
