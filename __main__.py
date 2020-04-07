@@ -30,7 +30,7 @@ class Main:
         settings = tools.settings.Settings()
         
         # Run the outputSaver script
-        outputsaver = tools.outputSaver.OutputSaver()
+        output_saver = tools.outputSaver.OutputSaver()
 
         parser = argparse.ArgumentParser(description='MAD downloads anime from CrunchyRoll, WCOStream and other websites.')
 
@@ -59,7 +59,7 @@ class Main:
         args.logger = False
         args.skipper = False
         args.settings = settings
-        args.outputsaver = outputsaver
+        args.outputsaver = output_saver
 
         if args.verbose:
             logging.basicConfig(format='%(levelname)s: %(message)s', filename="Error Log.log", level=logging.DEBUG)
@@ -116,6 +116,3 @@ class Main:
                     sites.wcostream.WCOStream(args.__dict__)
                 if verify.getWebsite() == 'Crunchyroll':
                     sites.crunchyroll.Crunchyroll(args.__dict__)
-            #AnimeDL(url=args.input, username=args.username, password=args.password,
-            #        resolution=args.resolution, language=args.language, skipper=skipper,
-            #        logger=logger, episode_range=args.range, output=args.output, settings=settings)

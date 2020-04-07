@@ -31,7 +31,7 @@ class WCOStream(object):
         self.newest = args['newest']
         self.output = args['output']
         self.settings = args['settings']
-        self.outputsaver = args['outputsaver']
+        self.output_saver = args['outputsaver']
         self.user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 ' \
                           '(KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'
         self.header = {
@@ -60,8 +60,8 @@ class WCOStream(object):
     def check_output(self, anime_name):
         if self.output is None:
             if self.settings.get_setting('useKnownDownloadLocation'):
-                if anime_name in self.outputsaver.savedLocation:
-                    self.output = self.outputsaver.get_location(anime_name)
+                if anime_name in self.output_saver.savedLocation:
+                    self.output = self.output_saver.get_location(anime_name)
             if self.settings.get_setting('defaultOutputLocation'):
                 self.output = self.settings.get_setting('defaultOutputLocation')
             if self.output is None:
@@ -77,7 +77,7 @@ class WCOStream(object):
                 self.output = os.getcwd()
             if self.settings.get_setting('saveDownloadLocation'):
                 self.output.translate(str.maketrans({'\\': os.sep, '/': os.sep}))
-                self.outputsaver.set_location(anime_name, self.output)
+                self.output_saver.set_location(anime_name, self.output)
         if not os.path.exists(self.output):
             print('The specified path does not exist please create it: {0}'.format(self.output))
             exit(1)
@@ -195,6 +195,13 @@ class WCOStream(object):
                 download_url = download_url[1][1]
             show_info = self.info_extractor(item)
             output = self.check_output(show_info[0])
+            args = []
+            args.append(download_url)
+            args.append(output)
+            args.append(self.header)
+            args.append(show_info)
+            args.append(self.settings)
+            self.dl.wco_dl(args)
             #Downloader(download_url=download_url, output=output, header=self.header,
             #           show_info=show_info, settings=self.settings)
 

@@ -15,7 +15,7 @@ class OutputSaver:
 
     def __init__(self):
         self.savedLocation = {}
-        self.path = sys.argv[0].replace('__main__.py','') + 'tools' + os.sep + 'savedLocations.json'
+        self.path = sys.argv[0].replace('__main__.py', '') + 'tools' + os.sep + 'savedLocations.json'
         # Does settings.json file exist?
         if os.path.exists(self.path):
             # Load up the settings
