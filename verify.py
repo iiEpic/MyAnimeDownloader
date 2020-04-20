@@ -33,7 +33,6 @@ class Verify(object):
 
     def check(self):
         # Check which website we are directing to
-        
         if "https://" in self.url:
             self.url = str(self.url)
         elif "http://" not in self.url:

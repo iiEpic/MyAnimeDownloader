@@ -135,8 +135,6 @@ class WCOStream(object):
         args.append(show_info)
         args.append(self.settings)
         self.dl.wco_dl(args)
-        #Downloader(download_url=download_url, output=output, header=self.header,
-        #           show_info=show_info, settings=self.settings)
 
     def download_show(self):
         page = requests.get(self.url)
@@ -148,11 +146,13 @@ class WCOStream(object):
                 links.append(link['href'])
 
         if self.exclude is not None:
-            excluded = [i for e in self.exclude for i in links if re.search(e, i)]
+            if "," not in self.exclude[0]:
+                self.exclude[0] = "{0},{0}".format(self.exclude[0])
+            excluded = [i for e in self.exclude[0].split(",") for i in links if re.search(e, i)]
             links = [item for item in links if item not in excluded]
         season = "season-" + self.season
 
-        if len(ep_range) == 1:
+        if "-" not in ep_range:
             ep_range = '{0}-{0}'.format(ep_range)
 
         if ep_range == 'l5' or ep_range == 'L5':  # L5 (Last five)
@@ -185,7 +185,7 @@ class WCOStream(object):
         else:
             matching = links
 
-        if len(matching) < 1:
+        if len(matching) > 1:
             matching.reverse()
         for item in matching:
             download_url = self.find_download_link(item)
@@ -202,11 +202,8 @@ class WCOStream(object):
             args.append(show_info)
             args.append(self.settings)
             self.dl.wco_dl(args)
-            #Downloader(download_url=download_url, output=output, header=self.header,
-            #           show_info=show_info, settings=self.settings)
 
-    @staticmethod
-    def info_extractor(url):
+    def info_extractor(self, url):
         url = re.sub('https://www.wcostream.com/', '', url)
         try:
             if "season" in url:
@@ -221,6 +218,8 @@ class WCOStream(object):
             season = "Season 1"
             episode = "Episode 0"
             desc = ""
+        if self.settings.get_setting('saveShowURL') and self.output_saver.get_show_url(show_name.title().strip()) == None:
+            self.output_saver.set_show_url(show_name.title().strip(), url)
         return show_name.title().strip(), season.title().strip(), episode.title().strip(), desc.title().strip(), url
 
     def is_valid(self):

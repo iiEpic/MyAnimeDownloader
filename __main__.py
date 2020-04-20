@@ -28,7 +28,7 @@ class Main:
     if __name__ == '__main__':
         # Run the settings script
         settings = tools.settings.Settings()
-        
+
         # Run the outputSaver script
         output_saver = tools.outputSaver.OutputSaver()
 
@@ -81,6 +81,9 @@ class Main:
         if args.nologin:
             args.username = ['username']
             args.password = ['password']
+
+        if args.outputsaver.get_show_url(args.input[0]) != None:
+            args.input[0] = args.outputsaver.get_show_url(args.input[0])
 
         if args.input is None:
             print("Please enter the required argument (Input -i). Run __main__.py --help")

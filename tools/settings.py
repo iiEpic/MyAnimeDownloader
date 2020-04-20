@@ -29,6 +29,7 @@ class Settings:
             self.loaded_settings['includeShowDesc'] = True
             self.loaded_settings['saveDownloadLocation'] = True
             self.loaded_settings['saveFormat'] = '{show}-S{season}E{episode}-{desc}'
+            self.loaded_settings['saveShowURL'] = True
             self.loaded_settings['seasonPadding'] = 2
             self.loaded_settings['useKnownDownloadLocation'] = True
 
