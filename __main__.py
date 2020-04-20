@@ -82,12 +82,13 @@ class Main:
             args.username = ['username']
             args.password = ['password']
 
-        if args.outputsaver.get_show_url(args.input[0]) != None:
-            args.input[0] = args.outputsaver.get_show_url(args.input[0])
-
         if args.input is None:
-            print("Please enter the required argument (Input -i). Run __main__.py --help")
-            exit(1)
+            try:
+                if args.outputsaver.get_show_url(args.input[0]) != None:
+                    args.input[0] = args.outputsaver.get_show_url(args.input[0])
+            except:
+                print("Please enter the required argument (Input -i). Run __main__.py --help")
+                exit(1)
         else:
             if type(args.username) == list:
                 args.username = args.username[0]
