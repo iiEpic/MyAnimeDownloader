@@ -5,8 +5,14 @@ import sys
 import requests
 import tkinter
 import webbrowser
+import inspect
+import tools
 from bs4 import BeautifulSoup
 from tkinter import messagebox
+
+current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parent_dir = os.path.dirname(current_dir)
+sys.path.insert(0, parent_dir)
 
 
 class Main(tkinter.Frame):
@@ -17,7 +23,7 @@ class Main(tkinter.Frame):
             self.master = master
             self.base_url = "https://github.com/EpicUnknown/MyAnimeDownloader/"
             self.base_path = sys.argv[0].replace('__main__.py', '')
-            print(sys.argv[0])
+            self.new_frame = tkinter.Frame(self.master, width=800, height=400)
             self.define_settings()
 
         def hello(self):
@@ -82,6 +88,20 @@ class Main(tkinter.Frame):
         def start_new():
             pass
 
+        def search(self):
+            new_search = tools.search.Search()
+            output = new_search.start()
+            base_url = "https://www.wcostream.com"
+
+            list_box = tkinter.Listbox(self.new_frame)
+            for item in output:
+                list_box.insert(output.index(item) + 1, "{0}. {1} ({2})\n".format(
+                    output.index(item) + 1,
+                    item.replace('/anime/', '').replace('-', ' ').title().strip(),
+                    base_url + item))
+            list_box.pack(fill='both', expand=True)
+            self.new_frame.pack(fill='both', expand=True)
+
         def define_settings(self):
             print('Setting up GUI...')
             self.master.title('My Anime Downloader - GUI')
@@ -100,9 +120,10 @@ class Main(tkinter.Frame):
             menubar.add_cascade(label="File", menu=filemenu)
 
             # Download Menu
-            dl_menu = tkinter.Menu(menubar, tearoff=0)
-            dl_menu.add_command(label="Start New Download", command=self.start_new)
-            menubar.add_cascade(label="Download", menu=dl_menu)
+            action_menu = tkinter.Menu(menubar, tearoff=0)
+            action_menu.add_command(label="Search for show", command=self.search)
+            action_menu.add_command(label="Start New Download", command=self.start_new)
+            menubar.add_cascade(label="Action", menu=action_menu)
 
             # Help Menu
             helpmenu = tkinter.Menu(menubar, tearoff=0)
