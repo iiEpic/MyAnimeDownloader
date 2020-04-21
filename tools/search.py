@@ -42,10 +42,10 @@ class Search:
                 pass
 
         for item in s_array:
-            print('{0}. {1} - {2} Episodes - ({3})'.format(s_array.index(item) + 1,
-                                                           item.replace('/anime/', '').replace('-', ' ').title().strip(),
-                                                           self.get_episode_count(self.base_url + item),
-                                                           self.base_url + item))
+            print('{0}. {1} - {2} Episodes - {3}'.format(str(s_array.index(item) + 1).zfill(2),
+                                                         item.replace('/anime/', '').replace('-', ' ').title().strip(),
+                                                         self.get_episode_count(self.base_url + item),
+                                                         self.base_url + item))
 
     @staticmethod
     def get_episode_count(url):
