@@ -42,7 +42,7 @@ class Search:
                 pass
 
         for item in s_array:
-            print('{0}. {1} - {2} Episodes - {3}'.format(str(s_array.index(item) + 1).zfill(2),
+            print('{0}. {1} - {2} - {3}'.format(str(s_array.index(item) + 1).zfill(2),
                                                          item.replace('/anime/', '').replace('-', ' ').title().strip(),
                                                          self.get_episode_count(self.base_url + item),
                                                          self.base_url + item))
@@ -52,17 +52,15 @@ class Search:
         page = requests.get(url)
         soup = BeautifulSoup(page.content, 'html.parser')
         episodes = soup.findAll('a', {'class': 'sonra'})
+        message = ''
+        episode_counter = 0
         for episode in episodes:
             try:
-                message = ''
                 if 'season' in episode['href']:
                     groups = re.search('season-([0-9]+)', episode['href'])
-                    message = "{0} Seasons".format(groups.group(1))
-
-                if 'episode' in episode['href']:
-                    groups = re.search('episode-([0-9]+)', episode['href'])
-                    message = "{0}, {1}".format(message, groups.group(1))
-
+                    message = "{0} Seasons, {1} Episodes".format(groups.group(1), len(episodes))
+                else:
+                    message = "{0} Episodes".format(len(episodes))
                 return message
             except:
                 return 'Unknown'
