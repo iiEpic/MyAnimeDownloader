@@ -53,9 +53,16 @@ class Search:
         soup = BeautifulSoup(page.content, 'html.parser')
         episodes = soup.findAll('a', {'class': 'sonra'})
         for episode in episodes:
-            if 'episode' in episode['href']:
-                try:
+            try:
+                message = ''
+                if 'season' in episode['href']:
+                    groups = re.search('season-([0-9]+)', episode['href'])
+                    message = "{0} Seasons".format(groups.group(1))
+
+                if 'episode' in episode['href']:
                     groups = re.search('episode-([0-9]+)', episode['href'])
-                    return groups.group(1)
-                except:
-                    return 'Unknown'
+                    message = "{0}, {1}".format(message, groups.group(1))
+
+                return message
+            except:
+                return 'Unknown'
