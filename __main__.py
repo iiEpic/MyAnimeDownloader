@@ -54,12 +54,18 @@ class Main:
                             action="store_true")
         parser.add_argument('-x', '--exclude', nargs=1, help='Specifies the episodes to not download (ie ova).',
                             default=None)
+        parser.add_argument('--search', action='store_true', help='Search for a show.')
 
         args = parser.parse_args()
         args.logger = False
         args.skipper = False
         args.settings = settings
         args.outputsaver = output_saver
+
+        if args.search:
+            run_search = tools.search.Search()
+            run_search.start()
+            exit(1)
 
         if args.verbose:
             logging.basicConfig(format='%(levelname)s: %(message)s', filename="Error Log.log", level=logging.DEBUG)
