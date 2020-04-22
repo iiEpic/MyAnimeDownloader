@@ -1,142 +1,133 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
+"""
+__author__ = "iEpic"
+__email__ = "epicunknown@gmail.com"
+
+All inspired by Anime-dl by Xonshiz
+"""
 import os
-import re
 import sys
-import requests
-import tkinter
-import webbrowser
 import inspect
+import argparse
+import logging
+import platform
+import sites
 import tools
-from bs4 import BeautifulSoup
-from tkinter import messagebox
+import gui
+from sys import exit
+from version import __version__
+from verify import Verify
 
 current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parent_dir = os.path.dirname(current_dir)
 sys.path.insert(0, parent_dir)
 
 
-class Main(tkinter.Frame):
+class Main:
     if __name__ == '__main__':
-        def __init__(self, master=None):
-            super().__init__(master)
-            self.version = "v2020.04.20.1-beta"
-            self.master = master
-            self.base_url = "https://github.com/EpicUnknown/MyAnimeDownloader/"
-            self.base_path = sys.argv[0].replace('__main__.py', '')
-            self.new_frame = tkinter.Frame(self.master, width=800, height=400)
-            self.define_settings()
+        # Run the settings script
+        settings = tools.settings.Settings()
 
-        def hello(self):
-            print('Hello')
+        # Run the outputSaver script
+        output_saver = tools.outputSaver.OutputSaver()
 
-        def about(self):
-            tkinter.messagebox.showinfo("About", "My Anime Downloader\nCreated by: iEpic\nVersion: {0}".format(
-                self.version))
+        parser = argparse.ArgumentParser(description='MAD downloads anime from CrunchyRoll, WCOStream and other websites.')
 
-        def edit_settings(self):
-            file_path = self.base_path + 'tools' + os.sep + 'settings.json'
+        parser.add_argument('--version', action='store_true', help='Shows version and exits.')
+
+        required_args = parser.add_argument_group('Required Arguments :')
+        required_args.add_argument('-i', '--input', nargs=1, help='Inputs the URL to anime.')
+
+        parser.add_argument('-p', '--password', nargs=1, help='Indicates password for a website.')
+        parser.add_argument('-u', '--username', nargs=1, help='Indicates username for a website.')
+        parser.add_argument('-r', '--resolution', nargs=1, help='Inputs the resolution to look for.', default='720')
+        parser.add_argument('-l', '--language', nargs=1, help='Selects the language for the show.', default='Japanese')
+        parser.add_argument('-se', '--season', nargs=1, help='Specifies what season to download.', default='All')
+        parser.add_argument('--skip', action='store_true', help='skips the video download and downloads only subs.')
+        parser.add_argument('-nl', '--nologin', action='store_true', help='Skips login for websites.')
+        parser.add_argument('-o', '--output', nargs=1, help='Specifies the directory of which to save the files.')
+        parser.add_argument('-n', '--newest', help='Get the newest episode in the series.', action='store_true')
+        parser.add_argument('-rn', '--range', nargs=1, help='Specifies the range of episodes to download.',
+                            default='All')
+        parser.add_argument("-v", "--verbose", help="Prints important debugging messages on screen.",
+                            action="store_true")
+        parser.add_argument('-x', '--exclude', nargs=1, help='Specifies the episodes to not download (ie ova).',
+                            default=None)
+        parser.add_argument('--search', action='store_true', help='Search for a show.')
+        parser.add_argument('--gui', action='store_true', help='Start the GUI')
+
+        args = parser.parse_args()
+        args.logger = False
+        args.skipper = False
+        args.settings = settings
+        args.outputsaver = output_saver
+
+        if args.search:
+            run_search = tools.search.Search()
+            run_search.start()
+            exit(1)
+
+        if args.gui:
+            run_gui = gui()
+
+        if args.verbose:
+            logging.basicConfig(format='%(levelname)s: %(message)s', filename="Error Log.log", level=logging.DEBUG)
+            logging.debug('You have successfully set the Debugging On.')
+            logging.debug("Arguments Provided : {0}".format(args))
+            logging.debug(
+                "Operating System : {0} - {1} - {2}".format(platform.system(), platform.release(), platform.version()))
+            logging.debug("Python Version : {0} ({1})".format(platform.python_version(), platform.architecture()[0]))
+            args.logger = True
+
+        if args.version:
+            print("Current Version: {0}".format(__version__))
+            exit()
+
+        if args.skip:
+            print("Will be skipping video downloads")
+            args.skipper = True
+
+        if args.nologin:
+            args.username = ['username']
+            args.password = ['password']
+
+        if args.input is None:
             try:
-                os.system(r"start notepad++ " + file_path)
-            except:
-                os.system(r"notepad.exe " + file_path)
-
-        def edit_locations(self):
-            file_path = self.base_path + 'tools' + os.sep + 'savedLocations.json'
-            try:
-                os.system(r"start notepad++ " + file_path)
-            except:
-                os.system(r"notepad.exe " + file_path)
-
-        def edit_url(self):
-            file_path = self.base_path + 'tools' + os.sep + 'savedURL.json'
-            try:
-                os.system(r"start notepad++ " + file_path)
-            except:
-                os.system(r"notepad.exe " + file_path)
-
-        def open_wiki(self):
-            url = self.base_url + "wiki"
-            msgbox = tkinter.messagebox.askyesno("Open Wiki", "Do you wish to proceed to GitHub to read the Wiki?")
-            if msgbox:
-                webbrowser.open_new(url)
-
-        def report_issue(self):
-            url = self.base_url + "issues"
-            msgbox = tkinter.messagebox.askyesno("Report an Issue",
-                                                 "Do you wish to proceed to GitHub to report the issue?")
-            if msgbox:
-                webbrowser.open_new(url)
-
-        def check_update(self):
-            url = self.base_url + "releases/latest"
-            page = requests.get(url)
-            soup = BeautifulSoup(page.content, 'html.parser')
-
-            version = soup.findAll('span', {'class': 'css-truncate-target'})[0].text
-            if version != self.version:
-                msgbox = tkinter.messagebox.askyesno("Update", "There is a newer version out.\nNew Version: {0}\n"
-                                                               "Current Version: {1}\n"
-                                                               "Do you wish to proceed to the update page?".format(
-                                                                version, self.version
-                ))
-                if msgbox:
-                    webbrowser.open_new(url)
+                if args.outputsaver.get_show_url(args.input[0]) is not None:
+                    args.input[0] = args.outputsaver.get_show_url(args.input[0])
+            except TypeError as e:
+                print("Please enter the required argument (Input -i). Run __main__.py --help")
+                exit(1)
+        else:
+            if type(args.username) == list:
+                args.username = args.username[0]
             else:
-                tkinter.messagebox.showinfo("Check Updates", "You are up-to-date!")
+                args.username = False
+            if type(args.password) == list:
+                args.password = args.password[0]
+            else:
+                args.password = False
+            if type(args.resolution) == list:
+                if "," in args.resolution[0]:
+                    args.resolution = args.resolution[0].split(',')
+                else:
+                    args.resolution = args.resolution[0]
+            if type(args.language) == list:
+                args.language = args.language[0]
+            if type(args.range) == list:
+                args.range = args.range[0]
+            if type(args.season) == list:
+                args.season = args.range[0]
+            if type(args.output) == list:
+                args.output = args.output[0]
 
-        @staticmethod
-        def start_new():
-            pass
-
-        def search(self):
-            new_search = tools.search.Search()
-            output = new_search.start()
-            base_url = "https://www.wcostream.com"
-
-            list_box = tkinter.Listbox(self.new_frame)
-            for item in output:
-                list_box.insert(output.index(item) + 1, "{0}. {1} ({2})\n".format(
-                    output.index(item) + 1,
-                    item.replace('/anime/', '').replace('-', ' ').title().strip(),
-                    base_url + item))
-            list_box.pack(fill='both', expand=True)
-            self.new_frame.pack(fill='both', expand=True)
-
-        def define_settings(self):
-            print('Setting up GUI...')
-            self.master.title('My Anime Downloader - GUI')
-            self.master.wm_minsize(1000, 500)
-            self.master.resizable(0, 0)
-
-            menubar = tkinter.Menu(self.master)
-
-            # File Menu
-            filemenu = tkinter.Menu(menubar, tearoff=0)
-            filemenu.add_command(label="Edit Settings", command=self.edit_settings)
-            filemenu.add_command(label="Edit savedLocations", command=self.edit_locations)
-            filemenu.add_command(label="Edit savedURL", command=self.edit_url)
-            filemenu.add_separator()
-            filemenu.add_command(label="Exit", command=self.master.quit)
-            menubar.add_cascade(label="File", menu=filemenu)
-
-            # Download Menu
-            action_menu = tkinter.Menu(menubar, tearoff=0)
-            action_menu.add_command(label="Search for show", command=self.search)
-            action_menu.add_command(label="Start New Download", command=self.start_new)
-            menubar.add_cascade(label="Action", menu=action_menu)
-
-            # Help Menu
-            helpmenu = tkinter.Menu(menubar, tearoff=0)
-            helpmenu.add_command(label="About", command=self.about)
-            helpmenu.add_command(label="Wiki", command=self.open_wiki)
-            helpmenu.add_command(label="Check for Updates", command=self.check_update)
-            helpmenu.add_separator()
-            helpmenu.add_command(label="Report Issue", command=self.report_issue)
-            menubar.add_cascade(label="Help", menu=helpmenu)
-
-            self.master.config(menu=menubar)
-
-
-m = tkinter.Tk()
-frame = Main(master=m)
-frame.mainloop()
+            # Lets check if the url is a website we support and if it requires a username and password
+            verify = Verify(args.__dict__)
+            if verify.isVerified():
+                # It is a website we support. Lets use it
+                if verify.getWebsite() == 'WCO':
+                    sites.wcostream.WCOStream(args.__dict__)
+                if verify.getWebsite() == 'Crunchyroll':
+                    sites.crunchyroll.Crunchyroll(args.__dict__)

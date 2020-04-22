@@ -9,8 +9,7 @@ class Search:
         self.base_url = "https://www.wcostream.com"
         pass
 
-    @staticmethod
-    def start():
+    def start(self):
         get_url = input('Is this [(S)ubbed/(D)ubbed/(C)artoon]: ')
         find_me = input('Input the show you are looking for: ')
         find_me = find_me.replace(' ', '-').lower()
@@ -41,10 +40,28 @@ class Search:
                                 s_array.append(show['href'])
             except:
                 pass
-        '''
+
+        new_array = []
         for item in s_array:
-            print('{0}. {1} ({2})'.format(s_array.index(item) + 1,
-                                          item.replace('/anime/', '').replace('-', ' ').title().strip(),
-                                          self.base_url + item))
-        '''
-        return s_array
+            new_array.append('{0}. {1} - {2} - {3}'.format(str(s_array.index(item) + 1).zfill(2),
+                                                           item.replace('/anime/', '').replace('-', ' ').title().strip()
+                                                           , self.get_episode_count(self.base_url + item),
+                                                           self.base_url + item))
+        return new_array
+
+    @staticmethod
+    def get_episode_count(url):
+        page = requests.get(url)
+        soup = BeautifulSoup(page.content, 'html.parser')
+        episodes = soup.findAll('a', {'class': 'sonra'})
+        message = ''
+        for episode in episodes:
+            try:
+                if 'season' in episode['href']:
+                    groups = re.search('season-([0-9]+)', episode['href'])
+                    message = "{0} Seasons, {1} Episodes".format(groups.group(1), len(episodes))
+                else:
+                    message = "{0} Episodes".format(len(episodes))
+                return message
+            except:
+                return 'Unknown'
