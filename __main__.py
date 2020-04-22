@@ -15,7 +15,6 @@ import logging
 import platform
 import sites
 import tools
-import gui
 from sys import exit
 from version import __version__
 from verify import Verify
@@ -66,11 +65,14 @@ class Main:
 
         if args.search:
             run_search = tools.search.Search()
-            run_search.start()
+            array = run_search.start()
+            for item in array:
+                print(item)
             exit(1)
 
         if args.gui:
-            run_gui = gui()
+            run_gui = tools.gui.Gui()
+            exit(1)
 
         if args.verbose:
             logging.basicConfig(format='%(levelname)s: %(message)s', filename="Error Log.log", level=logging.DEBUG)

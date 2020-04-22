@@ -15,15 +15,17 @@ parent_dir = os.path.dirname(current_dir)
 sys.path.insert(0, parent_dir)
 
 
-class Main(tkinter.Frame):
-    def __init__(self, master=None):
-        super().__init__(master)
-        self.version = "v2020.04.20.1-beta"
-        self.master = master
+class Gui(tkinter.Frame):
+
+    def __init__(self):
+        self.master = tkinter.Tk()
+        super().__init__(self.master)
+        self.version = "v2020.04.22.2-beta"
         self.base_url = "https://github.com/EpicUnknown/MyAnimeDownloader/"
         self.base_path = sys.argv[0].replace('__main__.py', '')
         self.new_frame = tkinter.Frame(self.master, width=800, height=400)
         self.define_settings()
+        self.new_frame.mainloop()
 
     def hello(self):
         print('Hello')
@@ -72,6 +74,8 @@ class Main(tkinter.Frame):
         soup = BeautifulSoup(page.content, 'html.parser')
 
         version = soup.findAll('span', {'class': 'css-truncate-target'})[0].text
+        version = re.sub('[a-zA-Z.-]', '', version)
+        print(version)
         if version != self.version:
             msgbox = tkinter.messagebox.askyesno("Update", "There is a newer version out.\nNew Version: {0}\n"
                                                            "Current Version: {1}\n"
@@ -131,8 +135,3 @@ class Main(tkinter.Frame):
         menubar.add_cascade(label="Help", menu=helpmenu)
 
         self.master.config(menu=menubar)
-
-
-m = tkinter.Tk()
-frame = Main(master=m)
-frame.mainloop()
