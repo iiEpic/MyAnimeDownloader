@@ -90,9 +90,9 @@ class Main:
 
         if args.input is None:
             try:
-                if args.outputsaver.get_show_url(args.input[0]) != None:
+                if args.outputsaver.get_show_url(args.input[0]) is not None:
                     args.input[0] = args.outputsaver.get_show_url(args.input[0])
-            except:
+            except TypeError as e:
                 print("Please enter the required argument (Input -i). Run __main__.py --help")
                 exit(1)
         else:

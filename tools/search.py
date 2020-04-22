@@ -43,9 +43,9 @@ class Search:
 
         for item in s_array:
             print('{0}. {1} - {2} - {3}'.format(str(s_array.index(item) + 1).zfill(2),
-                                                         item.replace('/anime/', '').replace('-', ' ').title().strip(),
-                                                         self.get_episode_count(self.base_url + item),
-                                                         self.base_url + item))
+                                                item.replace('/anime/', '').replace('-', ' ').title().strip(),
+                                                self.get_episode_count(self.base_url + item),
+                                                self.base_url + item))
 
     @staticmethod
     def get_episode_count(url):
@@ -53,7 +53,6 @@ class Search:
         soup = BeautifulSoup(page.content, 'html.parser')
         episodes = soup.findAll('a', {'class': 'sonra'})
         message = ''
-        episode_counter = 0
         for episode in episodes:
             try:
                 if 'season' in episode['href']:
