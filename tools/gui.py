@@ -22,7 +22,7 @@ class Gui(tkinter.Frame):
         super().__init__(self.master)
         self.version = "v2020.04.22.2-beta"
         self.base_url = "https://github.com/EpicUnknown/MyAnimeDownloader/"
-        self.base_path = sys.argv[0].replace('__main__.py', '')
+        self.base_path = sys.argv[0].replace('__main__.py', '').replace('__main__.exe', '')
         self.new_frame = tkinter.Frame(self.master, width=800, height=400)
         self.define_settings()
         self.new_frame.mainloop()
@@ -74,9 +74,9 @@ class Gui(tkinter.Frame):
         soup = BeautifulSoup(page.content, 'html.parser')
 
         version = soup.findAll('span', {'class': 'css-truncate-target'})[0].text
-        version = re.sub('[a-zA-Z.-]', '', version)
-        print(version)
-        if version != self.version:
+        int_version = int(re.sub('[a-zA-Z.-]', '', version))
+        current_version = int(re.sub('[a-zA-Z.-]', '', self.version))
+        if int_version > current_version:
             msgbox = tkinter.messagebox.askyesno("Update", "There is a newer version out.\nNew Version: {0}\n"
                                                            "Current Version: {1}\n"
                                                            "Do you wish to proceed to the update page?".format(
