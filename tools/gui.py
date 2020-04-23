@@ -81,7 +81,7 @@ class Gui(tkinter.Frame):
         page = requests.get(url)
         soup = BeautifulSoup(page.content, 'html.parser')
         content = soup.contents[0].splitlines()
-        version = int(content[0].replace('__version__ = ', '').replace('"', ''))
+        version = int(re.sub('[a-zA-Z.-]', '', content[0]))
         current_version = int(re.sub('[a-zA-Z.-]', '', self.version))
 
         if version > current_version:
