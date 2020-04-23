@@ -13,6 +13,7 @@ import inspect
 import argparse
 import logging
 import platform
+import datetime
 import sites
 import tools
 from sys import exit
@@ -62,6 +63,27 @@ class Main:
         args.skipper = False
         args.settings = settings
         args.outputsaver = output_saver
+
+        try:
+            if args.cacheupdate:
+                if args.cacheupdate[0] == '[AcceptRisk-{0}]'.format(__version__):
+                    user_consent = input('[WARNING]: Doing this excessively may get your internet traffic blocked by these '
+                                         'websites. This process takes upwards of 20-30 minutes.\n'
+                                         '**DO NOT OVER USE THIS ARGUMENT. USE AT OWN RISK**\n'
+                                         'Would you like to continue? [y/N]: ')
+                    if user_consent.lower() in ['y', 'ye', 'yes']:
+                        type_cache = input('Are you getting [(S)ubbed/(D)ubbed/(C)artoon]: ')
+                        print('Configuring cached files...\nThis may take up to 30 minutes..\nStarted at: {0}'.format(
+                            datetime.datetime.now()
+                        ))
+                        run_search = tools.search.Search(args.settings)
+                        array = run_search.start(get_url=type_cache.lower(), find_me='*', cache=True)
+                        print('Finished at: {0}'.format(datetime.datetime.now()))
+                        exit(1)
+                exit(1)
+        except AttributeError:
+            # Don't let people use this unless they know what they are doing
+            pass
 
         if args.search:
             run_search = tools.search.Search(args.settings)

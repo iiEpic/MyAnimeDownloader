@@ -1,4 +1,4 @@
-*.json
 *.exe
 *.bat
 *.pyc
+tools/savedURL.json
