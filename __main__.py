@@ -55,6 +55,7 @@ class Main:
         parser.add_argument('-x', '--exclude', nargs=1, help='Specifies the episodes to not download (ie ova).',
                             default=None)
         parser.add_argument('--search', action='store_true', help='Search for a show.')
+        parser.add_argument('--gui', action='store_true', help='Start the GUI')
 
         args = parser.parse_args()
         args.logger = False
@@ -64,7 +65,13 @@ class Main:
 
         if args.search:
             run_search = tools.search.Search()
-            run_search.start()
+            array = run_search.start()
+            for item in array:
+                print(item)
+            exit(1)
+
+        if args.gui:
+            run_gui = tools.gui.Gui()
             exit(1)
 
         if args.verbose:

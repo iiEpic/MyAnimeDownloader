@@ -41,11 +41,13 @@ class Search:
             except:
                 pass
 
+        new_array = []
         for item in s_array:
-            print('{0}. {1} - {2} - {3}'.format(str(s_array.index(item) + 1).zfill(2),
-                                                item.replace('/anime/', '').replace('-', ' ').title().strip(),
-                                                self.get_episode_count(self.base_url + item),
-                                                self.base_url + item))
+            new_array.append('{0}. {1} - {2} - {3}'.format(str(s_array.index(item) + 1).zfill(2),
+                                                           item.replace('/anime/', '').replace('-', ' ').title().strip()
+                                                           , self.get_episode_count(self.base_url + item),
+                                                           self.base_url + item))
+        return new_array
 
     @staticmethod
     def get_episode_count(url):

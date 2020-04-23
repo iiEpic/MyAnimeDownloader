@@ -14,15 +14,17 @@ import json
 class OutputSaver:
 
     def __init__(self):
-        def create_file(fileLocation, data):
-            file = open(fileLocation, 'w')
-            file.write(json.dumps(data, indent=4, sort_keys=True))
-            file.close()
+        def create_file(file_location, data):
+            f = open(file_location, 'w')
+            f.write(json.dumps(data, indent=4, sort_keys=True))
+            f.close()
 
         self.savedLocation = {}
         self.savedURL = {}
-        self.pathLocation = sys.argv[0].replace('__main__.py', '') + 'tools' + os.sep + 'savedLocations.json'
-        self.pathURL = sys.argv[0].replace('__main__.py', '') + 'tools' + os.sep + 'savedURL.json'
+        self.pathLocation = sys.argv[0].replace('__main__.py', '').replace('__main__.exe', '') + 'tools' +\
+            os.sep + 'savedLocations.json'
+        self.pathURL = sys.argv[0].replace('__main__.py', '').replace('__main__.exe', '') + 'tools' +\
+            os.sep + 'savedURL.json'
         # Does settings.json file exist?
         if os.path.exists(self.pathLocation):
             # Load up the savedLocation file
