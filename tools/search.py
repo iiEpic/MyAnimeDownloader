@@ -1,13 +1,23 @@
 
 import re
+import os
+import sys
+import json
 import requests
 from bs4 import BeautifulSoup
 
 
 class Search:
-    def __init__(self):
+    def __init__(self, settings):
         self.base_url = "https://www.wcostream.com"
-        pass
+        self.cache_path = sys.argv[0].replace('__main__.py', '').replace('__main__.exe', '') + 'resources' + os.sep +\
+            'cache.json'
+        self.main_dict = {}
+        self.settings = settings
+        if os.path.exists(self.cache_path):
+            # Load up the settings
+            with open(self.cache_path) as file:
+                self.main_dict = json.load(file)
 
     def start(self):
         get_url = input('Is this [(S)ubbed/(D)ubbed/(C)artoon]: ')
@@ -46,6 +56,8 @@ class Search:
             new_array.append('{0} - {1} - {2}'.format(item.replace('/anime/', '').replace('-', ' ').title().strip(),
                                                       self.get_episode_count(self.base_url + item),
                                                       self.base_url + item))
+        if self.settings.get_setting('saveSearchToCache'):
+            self.save_to_cache(new_array)
         return new_array
 
     @staticmethod
@@ -64,3 +76,26 @@ class Search:
                 return message
             except:
                 return 'Unknown'
+
+    def save_to_cache(self, array):
+        for item in array:
+            show_info = {}
+            item_split = item.split(' - ')
+            show_name = item_split[0]
+            if 'Seasons' in item_split[1]:
+                seasons = re.search('^([0-9]+)', item_split[1]).group(1)
+                episodes = re.search('Seasons, ([0-9]+) Episodes', item_split[1]).group(1)
+                url = item_split[2]
+            else:
+                seasons = '1'
+                episodes = re.search('^([0-9]+)', item_split[1]).group(1)
+                url = item_split[2]
+            show_info['seasons'] = seasons
+            show_info['episodes'] = episodes
+            show_info['url'] = url
+            if show_name not in self.main_dict.keys():
+                self.main_dict[show_name] = show_info
+
+        file = open(self.cache_path, 'w')
+        file.write(json.dumps(self.main_dict, indent=4, sort_keys=True))
+        file.close()

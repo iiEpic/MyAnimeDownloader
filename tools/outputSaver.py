@@ -19,46 +19,46 @@ class OutputSaver:
             f.write(json.dumps(data, indent=4, sort_keys=True))
             f.close()
 
-        self.savedLocation = {}
-        self.savedURL = {}
-        self.pathLocation = sys.argv[0].replace('__main__.py', '').replace('__main__.exe', '') + 'tools' +\
+        self.saved_location = {}
+        self.saved_url = {}
+        self.path_location = sys.argv[0].replace('__main__.py', '').replace('__main__.exe', '') + 'tools' +\
             os.sep + 'savedLocations.json'
-        self.pathURL = sys.argv[0].replace('__main__.py', '').replace('__main__.exe', '') + 'tools' +\
+        self.path_url = sys.argv[0].replace('__main__.py', '').replace('__main__.exe', '') + 'tools' + \
             os.sep + 'savedURL.json'
         # Does settings.json file exist?
-        if os.path.exists(self.pathLocation):
+        if os.path.exists(self.path_location):
             # Load up the savedLocation file
-            with open(self.pathLocation) as file:
-                self.savedLocation = json.load(file)
+            with open(self.path_location) as file:
+                self.saved_location = json.load(file)
                 print('Saved Locations Loaded.')
         else:
-            create_file(self.pathLocation, self.savedLocation)
+            create_file(self.path_location, self.saved_location)
             print('Saved URLs have been created!')
 
-        if os.path.exists(self.pathURL):
+        if os.path.exists(self.path_url):
             # Load up the savedURL file
-            with open(self.pathURL) as file:
-                self.savedURL = json.load(file)
+            with open(self.path_url) as file:
+                self.saved_url = json.load(file)
                 print('Saved URLs Loaded.')
         else:
-            create_file(self.pathURL, self.savedURL)
+            create_file(self.path_url, self.saved_url)
             print('Saved URLs have been created!')
 
     def get_location(self, show_name):
-        if show_name in self.savedLocation:
-            return self.savedLocation[show_name]
+        if show_name in self.saved_location:
+            return self.saved_location[show_name]
 
     def set_location(self, show_name, location):
-        self.savedLocation[show_name] = location
-        file = open(self.pathLocation, 'w')
-        file.write(json.dumps(self.savedLocation, indent=4, sort_keys=True))
+        self.saved_location[show_name] = location
+        file = open(self.path_location, 'w')
+        file.write(json.dumps(self.saved_location, indent=4, sort_keys=True))
         file.close()
 
     def set_show_url(self, show_name, url):
-        self.savedURL[show_name] = url
-        file = open(self.pathURL, 'w')
-        file.write(json.dumps(self.savedURL, indent=4, sort_keys=True))
+        self.saved_url[show_name] = url
+        file = open(self.path_url, 'w')
+        file.write(json.dumps(self.saved_url, indent=4, sort_keys=True))
         file.close()
 
     def get_show_url(self, show_name):
-        return self.savedURL[show_name] or None
+        return self.saved_url[show_name] or None

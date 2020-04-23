@@ -15,7 +15,7 @@ class Settings:
 
     def __init__(self):
         self.loaded_settings = {}
-        self.path = self.path = sys.argv[0].replace('__main__.py', '').replace('__main__.exe', '') + 'tools' +\
+        self.path = sys.argv[0].replace('__main__.py', '').replace('__main__.exe', '') + 'tools' +\
             os.sep + 'settings.json'
         # Does settings.json file exist?
         if os.path.exists(self.path):
@@ -30,6 +30,7 @@ class Settings:
             self.loaded_settings['includeShowDesc'] = True
             self.loaded_settings['saveDownloadLocation'] = True
             self.loaded_settings['saveFormat'] = '{show}-S{season}E{episode}-{desc}'
+            self.loaded_settings['saveSearchToCache'] = True
             self.loaded_settings['saveShowURL'] = True
             self.loaded_settings['seasonPadding'] = 2
             self.loaded_settings['useKnownDownloadLocation'] = True

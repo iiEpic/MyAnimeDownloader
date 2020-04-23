@@ -64,7 +64,7 @@ class Main:
         args.outputsaver = output_saver
 
         if args.search:
-            run_search = tools.search.Search()
+            run_search = tools.search.Search(args.settings)
             array = run_search.start()
             for item in array:
                 print(item)
