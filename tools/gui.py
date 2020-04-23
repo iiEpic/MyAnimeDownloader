@@ -9,6 +9,7 @@ import inspect
 import tools
 from bs4 import BeautifulSoup
 from tkinter import messagebox
+from version import __version__
 
 current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parent_dir = os.path.dirname(current_dir)
@@ -20,10 +21,12 @@ class Gui(tkinter.Frame):
     def __init__(self):
         self.master = tkinter.Tk()
         super().__init__(self.master)
-        self.version = "v2020.04.22.2-beta"
+        self.version = __version__
         self.base_url = "https://github.com/EpicUnknown/MyAnimeDownloader/"
         self.base_path = sys.argv[0].replace('__main__.py', '').replace('__main__.exe', '')
         self.new_frame = tkinter.Frame(self.master, width=800, height=400)
+        self.list_box = tkinter.Listbox(self.new_frame)
+        self.platform = sys.platform
         self.define_settings()
         self.new_frame.mainloop()
 
@@ -36,24 +39,29 @@ class Gui(tkinter.Frame):
 
     def edit_settings(self):
         file_path = self.base_path + 'tools' + os.sep + 'settings.json'
-        try:
-            os.system(r"start notepad++ " + file_path)
-        except:
-            os.system(r"notepad.exe " + file_path)
+        self.open_file(file_path)
 
     def edit_locations(self):
         file_path = self.base_path + 'tools' + os.sep + 'savedLocations.json'
-        try:
-            os.system(r"start notepad++ " + file_path)
-        except:
-            os.system(r"notepad.exe " + file_path)
+        self.open_file(file_path)
 
     def edit_url(self):
         file_path = self.base_path + 'tools' + os.sep + 'savedURL.json'
-        try:
-            os.system(r"start notepad++ " + file_path)
-        except:
-            os.system(r"notepad.exe " + file_path)
+        self.open_file(file_path)
+
+    def open_file(self, file):
+        if self.platform == 'win32':
+            os.system(file)
+            return
+        if self.platform == 'linux':
+            if os.getenv('EDITOR') is None:
+                print('[WARNING] You do not have an EDITOR defined in .bashrc, please put the following into .bashrc\n'
+                      '"export EDITOR=\'program name\'" for example "export EDITOR=\'nano\'"')
+                os.system('%s %s' % ('xdg-open', file))
+                return
+            else:
+                os.system('%s %s' % (os.getenv('EDITOR'), file))
+                return
 
     def open_wiki(self):
         url = self.base_url + "wiki"
@@ -69,21 +77,21 @@ class Gui(tkinter.Frame):
             webbrowser.open_new(url)
 
     def check_update(self):
-        url = self.base_url + "releases/latest"
+        url = "https://raw.githubusercontent.com/EpicUnknown/MyAnimeDownloader/master/version.py"
         page = requests.get(url)
         soup = BeautifulSoup(page.content, 'html.parser')
-
-        version = soup.findAll('span', {'class': 'css-truncate-target'})[0].text
-        int_version = int(re.sub('[a-zA-Z.-]', '', version))
+        content = soup.contents[0].splitlines()
+        version = int(content[0].replace('__version__ = ', '').replace('"', ''))
         current_version = int(re.sub('[a-zA-Z.-]', '', self.version))
-        if int_version > current_version:
+
+        if version > current_version:
             msgbox = tkinter.messagebox.askyesno("Update", "There is a newer version out.\nNew Version: {0}\n"
                                                            "Current Version: {1}\n"
                                                            "Do you wish to proceed to the update page?".format(
                                                             version, self.version
             ))
             if msgbox:
-                webbrowser.open_new(url)
+                webbrowser.open_new(self.base_url + "releases/latest")
         else:
             tkinter.messagebox.showinfo("Check Updates", "You are up-to-date!")
 
@@ -94,12 +102,10 @@ class Gui(tkinter.Frame):
     def search(self):
         new_search = tools.search.Search()
         output = new_search.start()
-        base_url = "https://www.wcostream.com"
 
-        list_box = tkinter.Listbox(self.new_frame)
         for item in output:
-            list_box.insert(output.index(item), item)
-        list_box.pack(fill='both', expand=True)
+            self.list_box.insert(output.index(item), item)
+        self.list_box.pack(fill='both', expand=True)
         self.new_frame.pack(fill='both', expand=True)
 
     def define_settings(self):

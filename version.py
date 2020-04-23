@@ -1,4 +1,1 @@
-__version__ = "B.2020.04.22.2"
-# A - Alpha Build (Untested)
-# B - Beta Build (Slightly Tested)
-# S - Stable Build (Tested)
+__version__ = "2020.04.22.4-beta"
