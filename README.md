@@ -4,6 +4,6 @@ Download anime from multiple websites using one program!
 
 Go check out the [wiki](https://github.com/EpicUnknown/MyAnimeDownloader/wiki) for more info!
 
-Need help with arguments? [Click Here - Wiki](https://github.com/EpicUnknown/MyAnimeDownloader/wiki/Commands)  
+Need help with arguments? [Click Here - Wiki](https://github.com/EpicUnknown/MyAnimeDownloader/wiki/Arguments)  
 Need help with settings? [Click Here - Wiki](https://github.com/EpicUnknown/MyAnimeDownloader/wiki/Settings)  
 Curious as to what is in store for this script? [Check out the RoadMap!](https://github.com/EpicUnknown/MyAnimeDownloader/wiki/Roadmap)
