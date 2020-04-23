@@ -151,8 +151,8 @@ class WCOStream(object):
             excluded = [i for e in self.exclude[0].split(",") for i in links if re.search(e, i)]
             links = [item for item in links if item not in excluded]
         season = "season-" + self.season
-
-        if "-" not in ep_range:
+        
+        if "-" not in ep_range and ep_range != 'All':
             ep_range = '{0}-{0}'.format(ep_range)
 
         if ep_range == 'l5' or ep_range == 'L5':  # L5 (Last five)

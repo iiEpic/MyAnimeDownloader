@@ -121,7 +121,7 @@ class Main:
             if type(args.range) == list:
                 args.range = args.range[0]
             if type(args.season) == list:
-                args.season = args.range[0]
+                args.season = args.season[0]
             if type(args.output) == list:
                 args.output = args.output[0]
 
