@@ -30,9 +30,6 @@ class Main:
         # Run the settings script
         settings = tools.settings.Settings()
 
-        # Run the outputSaver script
-        output_saver = tools.outputSaver.OutputSaver()
-
         parser = argparse.ArgumentParser(description='MAD downloads anime from CrunchyRoll, WCOStream and other websites.')
 
         parser.add_argument('--version', action='store_true', help='Shows version and exits.')
@@ -48,7 +45,7 @@ class Main:
         parser.add_argument('--skip', action='store_true', help='skips the video download and downloads only subs.')
         parser.add_argument('-nl', '--nologin', action='store_true', help='Skips login for websites.')
         parser.add_argument('-o', '--output', nargs=1, help='Specifies the directory of which to save the files.')
-        parser.add_argument('-n', '--newest', help='Get the newest episode in the series.', action='store_true')
+        parser.add_argument('-n', '--newest', action='store_true', help='Get the newest episode in the series.')
         parser.add_argument('-rn', '--range', nargs=1, help='Specifies the range of episodes to download.',
                             default='All')
         parser.add_argument("-v", "--verbose", help="Prints important debugging messages on screen.",
@@ -57,37 +54,20 @@ class Main:
                             default=None)
         parser.add_argument('--search', action='store_true', help='Search for a show.')
         parser.add_argument('--gui', action='store_true', help='Start the GUI')
+        parser.add_argument('-t', '--type', nargs=1, help='Specifies Subbed, Dubbed or Cartoon. [Default]=Subbed',
+                            default='subbed')
 
         args = parser.parse_args()
         args.logger = False
         args.skipper = False
         args.settings = settings
-        args.outputsaver = output_saver
-
-        try:
-            if args.cacheupdate:
-                if args.cacheupdate[0] == '[AcceptRisk-{0}]'.format(__version__):
-                    user_consent = input('[WARNING]: Doing this excessively may get your internet traffic blocked by these '
-                                         'websites. This process takes upwards of 20-30 minutes.\n'
-                                         '**DO NOT OVER USE THIS ARGUMENT. USE AT OWN RISK**\n'
-                                         'Would you like to continue? [y/N]: ')
-                    if user_consent.lower() in ['y', 'ye', 'yes']:
-                        type_cache = input('Are you getting [(S)ubbed/(D)ubbed/(C)artoon]: ')
-                        print('Configuring cached files...\nThis may take up to 30 minutes..\nStarted at: {0}'.format(
-                            datetime.datetime.now()
-                        ))
-                        run_search = tools.search.Search(args.settings)
-                        array = run_search.start(get_url=type_cache.lower(), find_me='*', cache=True)
-                        print('Finished at: {0}'.format(datetime.datetime.now()))
-                        exit(1)
-                exit(1)
-        except AttributeError:
-            # Don't let people use this unless they know what they are doing
-            pass
+        search = tools.search.Search(args.settings)
 
         if args.search:
-            run_search = tools.search.Search(args.settings)
-            array = run_search.start()
+            if len(sys.argv) != 2:
+                print('Please only use the \'__main__.py --search\' to search.')
+                exit(1)
+            array = search.start()
             for item in array:
                 print(item)
             exit(1)
@@ -117,13 +97,38 @@ class Main:
             args.username = ['username']
             args.password = ['password']
 
-        if args.input is None:
-            try:
-                if args.outputsaver.get_show_url(args.input[0]) is not None:
-                    args.input[0] = args.outputsaver.get_show_url(args.input[0])
-            except TypeError as e:
-                print("Please enter the required argument (Input -i). Run __main__.py --help")
+
+        if isinstance(args.type, list):
+            args.type = args.type[0]
+
+        # Make this use Cached Version
+        show_name, show_info = args.settings.get_show_info(show_name=args.input[0], show_type=args.type.lower())
+        if show_name is not None:
+            print('Using Cached Mode.. [{0}]'.format(show_name))
+            args.show_info = show_info
+            args.show_name = show_name
+            wco = sites.wcostream.WCOStream(args.__dict__)
+            exit(1)
+        else:
+            print('That show does not exist in the Cache. Trying to search...')
+            results = search.start(get_url=args.type.lower(), find_me=args.input[0], cached=False)
+            if len(results) == 0:
+                print('No show by that name found.')
                 exit(1)
+            for item in results:
+                print(item)
+            exit(1)
+        '''
+        try:
+            if args.outputsaver.get_show_url(args.input[0]) is not None:
+                args.input[0] = args.outputsaver.get_show_url(args.input[0])
+        except TypeError as e:
+            pass
+        '''
+
+        if args.input is None:
+            print("Please enter the required argument (Input -i). Run __main__.py --help")
+            exit(1)
         else:
             if type(args.username) == list:
                 args.username = args.username[0]
@@ -144,8 +149,6 @@ class Main:
                 args.range = args.range[0]
             if type(args.season) == list:
                 args.season = args.season[0]
-            if type(args.output) == list:
-                args.output = args.output[0]
 
             # Lets check if the url is a website we support and if it requires a username and password
             verify = Verify(args.__dict__)

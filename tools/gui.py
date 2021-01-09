@@ -42,11 +42,11 @@ class Gui(tkinter.Frame):
         self.open_file(file_path)
 
     def edit_locations(self):
-        file_path = self.base_path + 'tools' + os.sep + 'savedLocations.json'
+        file_path = self.base_path + 'resources' + os.sep + 'cache.json'
         self.open_file(file_path)
 
     def edit_url(self):
-        file_path = self.base_path + 'tools' + os.sep + 'savedURL.json'
+        file_path = self.base_path + 'resources' + os.sep + 'cache.json'
         self.open_file(file_path)
 
     def open_file(self, file):

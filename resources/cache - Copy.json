@@ -8,25 +8,22 @@
     },
     "07 Ghost English Subbed Episodes": {
         "download_location": "",
-        "seasons": {
-            "1": 25
-        },
+        "episodes": "25",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/07-ghost-english-subbed-episodes"
     },
     "1 2 Paradise English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 2
-        },
+        "episodes": "2",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/1-2-paradise-english-subbed"
     },
     "100 Pascal Sensei English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 36
-        },
+        "episodes": "36",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/100-pascal-sensei-english-subbed"
     },
@@ -46,10 +43,9 @@
     },
     "11Eyes": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "cartoon",
+        "episodes": "12",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/11eyes"
     },
     "12 Oz Mouse": {
@@ -61,10 +57,8 @@
     },
     "12 Sai Chicchana Mune No Tokimeki English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12,
-            "2": 12
-        },
+        "episodes": "24",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/12-sai-chicchana-mune-no-tokimeki-english-subbed"
     },
@@ -84,9 +78,8 @@
     },
     "18If English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/18if-english-subbed"
     },
@@ -99,9 +92,8 @@
     },
     "22 7 English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/22-7-english-subbed"
     },
@@ -128,18 +120,15 @@
     },
     "3 Gatsu No Lion English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 22,
-            "2": 22
-        },
+        "episodes": "45",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/3-gatsu-no-lion-english-subbed"
     },
     "3 Nen D Gumi Glass No Kamen Subbed Episodes": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/3-nen-d-gumi-glass-no-kamen-subbed-episodes"
     },
@@ -152,9 +141,8 @@
     },
     "30 Sai No Hoken Taiiku English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/30-sai-no-hoken-taiiku-english-subbed"
     },
@@ -169,7 +157,6 @@
         "download_location": "",
         "episodes": "24",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/3d-kanojo-real-girl"
     },
     "3D Kanojo Real Girl English Subbed": {
@@ -211,7 +198,6 @@
         "download_location": "",
         "episodes": "24",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/7-seeds"
     },
     "7 Seeds English Subbed": {
@@ -274,7 +260,6 @@
         "download_location": "",
         "episodes": "75",
         "seasons": "3",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/a-certain-magical-index"
     },
     "A Certain Scientific Accelerator": {
@@ -288,15 +273,13 @@
         "download_location": "",
         "episodes": "55",
         "seasons": "3",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/a-certain-scientific-railgun"
     },
     "A Channel": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "cartoon",
+        "episodes": "23",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/a-channel"
     },
     "A Charlie Brown Thanksgiving": {
@@ -593,43 +576,31 @@
         "type": "cartoon",
         "url": "https://www.wcostream.com/anime/a-wish-for-wings-that-work"
     },
-    "A3 Season Spring Summer English Subbed": {
-        "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "subbed",
-        "url": "https://www.wcostream.com/anime/a3-season-spring-summer-english-subbed"
-    },
     "Aa Harimanada": {
         "download_location": "",
-        "seasons": {
-            "1": 23
-        },
-        "type": "cartoon",
+        "episodes": "23",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/aa-harimanada"
     },
     "Aa Megami Sama 2011 English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
+        "episodes": "3",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aa-megami-sama-2011-english-subbed"
     },
     "Aa Megami Sama Chichaitte Kota Wa Benri Da Ne English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 48
-        },
+        "episodes": "48",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aa-megami-sama-chichaitte-kota-wa-benri-da-ne-english-subbed"
     },
     "Aa Megami Sama Tatakau Tsubasa English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "2",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aa-megami-sama-tatakau-tsubasa-english-subbed"
     },
@@ -656,10 +627,9 @@
     },
     "Abarenbou Rikishi Matsutarou": {
         "download_location": "",
-        "seasons": {
-            "1": 23
-        },
-        "type": "cartoon",
+        "episodes": "23",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/abarenbou-rikishi-matsutarou"
     },
     "Abby Hatcher": {
@@ -706,9 +676,8 @@
     },
     "Absolute Duo English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/absolute-duo-english-subbed"
     },
@@ -721,9 +690,8 @@
     },
     "Acca 13 Ku Kansatsu Ka English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/acca-13-ku-kansatsu-ka-english-subbed"
     },
@@ -743,25 +711,22 @@
     },
     "Accel World English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 24
-        },
+        "episodes": "35",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/accel-world-english-subbed"
     },
     "Acchi Kocchi": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "cartoon",
+        "episodes": "13",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/acchi-kocchi"
     },
     "Ace Attorney": {
         "download_location": "",
         "episodes": "47",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/ace-attorney"
     },
     "Ace Lightning": {
@@ -780,10 +745,9 @@
     },
     "Ace Wo Nerae": {
         "download_location": "",
-        "seasons": {
-            "1": 26
-        },
-        "type": "cartoon",
+        "episodes": "32",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/ace-wo-nerae"
     },
     "Action Dad": {
@@ -795,9 +759,8 @@
     },
     "Action Heroine Cheer Fruits English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/action-heroine-cheer-fruits-english-subbed"
     },
@@ -817,10 +780,8 @@
     },
     "Active Raid Special Public Security Fifth Division Third Mobile Assault Eighth Unit English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12,
-            "2": 12
-        },
+        "episodes": "24",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/active-raid-special-public-security-fifth-division-third-mobile-assault-eighth-unit-english-subbed"
     },
@@ -833,9 +794,8 @@
     },
     "Actors Songs Connection English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/actors-songs-connection-english-subbed"
     },
@@ -890,9 +850,8 @@
     },
     "Africa No Salaryman English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/africa-no-salaryman-english-subbed"
     },
@@ -933,26 +892,16 @@
     },
     "Agatha Christie No Meitantei Poirot To Marple": {
         "download_location": "",
-        "seasons": {
-            "1": 39
-        },
-        "type": "cartoon",
+        "episodes": "39",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/agatha-christie-no-meitantei-poirot-to-marple"
-    },
-    "Age Of Gunslingers %E2%85%B2 Xue Zu Mi Shi": {
-        "download_location": "",
-        "seasons": {
-            "1": 0
-        },
-        "type": "cartoon",
-        "url": "https://www.wcostream.com/anime/age-of-gunslingers-%e2%85%b2-xue-zu-mi-shi"
     },
     "Age Of Gunslingers 3 Xue Zu Mi Shi": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "cartoon",
+        "episodes": "12",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/age-of-gunslingers-3-xue-zu-mi-shi"
     },
     "Agent Aika": {
@@ -964,9 +913,8 @@
     },
     "Aggressive Retsuko English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 100
-        },
+        "episodes": "98",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aggressive-retsuko-english-subbed"
     },
@@ -979,9 +927,8 @@
     },
     "Aguu Tensai Ningyou English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aguu-tensai-ningyou-english-subbed"
     },
@@ -996,14 +943,12 @@
         "download_location": "",
         "episodes": "26",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/ah-my-buddha-2"
     },
     "Ah My Goddess": {
         "download_location": "",
         "episodes": "51",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/ah-my-goddess"
     },
     "Ah My Goddess Ova": {
@@ -1022,17 +967,15 @@
     },
     "Ahiru No Sora English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 30
-        },
+        "episodes": "28",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ahiru-no-sora-english-subbed"
     },
     "Aho Girl English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aho-girl-english-subbed"
     },
@@ -1043,51 +986,38 @@
         "type": "cartoon",
         "url": "https://www.wcostream.com/anime/ai-football-ggo"
     },
-    "Ai Mai Mii": {
-        "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "cartoon",
-        "url": "https://www.wcostream.com/anime/ai-mai-mii"
-    },
     "Ai No Kusabi": {
         "download_location": "",
-        "seasons": {
-            "1": 2
-        },
-        "type": "cartoon",
+        "episodes": "2",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/ai-no-kusabi"
     },
     "Ai No Kusabi 2012": {
         "download_location": "",
-        "seasons": {
-            "1": 4
-        },
-        "type": "cartoon",
+        "episodes": "4",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/ai-no-kusabi-2012"
     },
     "Ai No Wakakusa Monogatari English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 9
-        },
+        "episodes": "9",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ai-no-wakakusa-monogatari-english-subbed"
     },
     "Ai Tenchi Muyou English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 60
-        },
+        "episodes": "59",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ai-tenchi-muyou-english-subbed"
     },
     "Ai To Yuuki No Pig Girl Tonde Buurin English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 8
-        },
+        "episodes": "8",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ai-to-yuuki-no-pig-girl-tonde-buurin-english-subbed"
     },
@@ -1114,9 +1044,8 @@
     },
     "Aico Incarnation English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aico-incarnation-english-subbed"
     },
@@ -1129,50 +1058,43 @@
     },
     "Aika Zero": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
-        "type": "cartoon",
+        "episodes": "6",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/aika-zero"
     },
     "Aikatsu English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 178,
-            "3": 148
-        },
+        "episodes": "179",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aikatsu-english-subbed"
     },
     "Aikatsu Friends English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 56
-        },
+        "episodes": "51",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aikatsu-friends-english-subbed"
     },
     "Aikatsu Friends Kagayaki No Jewel English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 69
-        },
+        "episodes": "26",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aikatsu-friends-kagayaki-no-jewel-english-subbed"
     },
     "Aikatsu On Parade English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 25
-        },
+        "episodes": "27",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aikatsu-on-parade-english-subbed"
     },
     "Aikatsu Stars English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 100
-        },
+        "episodes": "102",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aikatsu-stars-english-subbed"
     },
@@ -1192,10 +1114,9 @@
     },
     "Air Gear Kuro No Hane To Nemuri No Mori Break On The Sky": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
-        "type": "cartoon",
+        "episodes": "3",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/air-gear-kuro-no-hane-to-nemuri-no-mori-break-on-the-sky"
     },
     "Air In Summer": {
@@ -1207,98 +1128,84 @@
     },
     "Air Master": {
         "download_location": "",
-        "seasons": {
-            "1": 27
-        },
-        "type": "cartoon",
+        "episodes": "27",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/air-master"
     },
     "Aishite Knight": {
         "download_location": "",
-        "seasons": {
-            "1": 42
-        },
-        "type": "cartoon",
+        "episodes": "42",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/aishite-knight"
     },
     "Aishiteruze Baby English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 26
-        },
+        "episodes": "26",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aishiteruze-baby-english-subbed"
     },
     "Aiura": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "cartoon",
+        "episodes": "12",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/aiura"
     },
     "Ajimu Beach Story": {
         "download_location": "",
-        "seasons": {
-            "1": 4
-        },
-        "type": "cartoon",
+        "episodes": "4",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/ajimu-beach-story"
     },
     "Ajin Demi Human": {
         "download_location": "",
         "episodes": "26",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/ajin-demi-human"
     },
     "Ajin English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13,
-            "2": 13
-        },
+        "episodes": "30",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ajin-english-subbed"
     },
     "Aka Chan To Boku": {
         "download_location": "",
-        "seasons": {
-            "1": 26
-        },
-        "type": "cartoon",
+        "episodes": "26",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/aka-chan-to-boku"
     },
     "Akagami No Shirayuki Hime Snow White With The Red Hair English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12,
-            "2": 12
-        },
+        "episodes": "25",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/akagami-no-shirayuki-hime-snow-white-with-the-red-hair-english-subbed"
     },
     "Akage No Anne English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 50
-        },
+        "episodes": "50",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/akage-no-anne-english-subbed"
     },
     "Akahori Gedou Hour Rabuge": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
-        "type": "cartoon",
+        "episodes": "13",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/akahori-gedou-hour-rabuge"
     },
     "Akai Koudan Zillion English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 31
-        },
+        "episodes": "31",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/akai-koudan-zillion-english-subbed"
     },
@@ -1311,34 +1218,30 @@
     },
     "Akane Maniax": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
-        "type": "cartoon",
+        "episodes": "3",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/akane-maniax"
     },
     "Akaneiro Ni Somaru Saka": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "cartoon",
+        "episodes": "13",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/akaneiro-ni-somaru-saka"
     },
     "Akanesasu Shoujo English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/akanesasu-shoujo-english-subbed"
     },
     "Akazukin Chacha": {
         "download_location": "",
-        "seasons": {
-            "1": 74
-        },
-        "type": "cartoon",
+        "episodes": "77",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/akazukin-chacha"
     },
     "Akb0048": {
@@ -1357,34 +1260,30 @@
     },
     "Aki No Kanade English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "1",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aki-no-kanade-english-subbed"
     },
     "Aki Sora English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 1
-        },
+        "episodes": "1",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aki-sora-english-subbed"
     },
     "Aki Sora Yume No Naka English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 2
-        },
+        "episodes": "2",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aki-sora-yume-no-naka-english-subbed"
     },
     "Akiba Chan": {
         "download_location": "",
-        "seasons": {
-            "1": 10
-        },
-        "type": "cartoon",
+        "episodes": "10",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/akiba-chan"
     },
     "Akibas Trip The Animation": {
@@ -1396,9 +1295,8 @@
     },
     "Akibas Trip The Animation English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/akibas-trip-the-animation-english-subbed"
     },
@@ -1411,33 +1309,29 @@
     },
     "Akikan": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "cartoon",
+        "episodes": "12",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/akikan"
     },
     "Akkun To Kanojo English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 25
-        },
+        "episodes": "25",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/akkun-to-kanojo-english-subbed"
     },
     "Aku No Hana": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
-        "type": "cartoon",
+        "episodes": "13",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/aku-no-hana"
     },
     "Akuma No Memumemu Chan English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 1
-        },
+        "episodes": "1",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/akuma-no-memumemu-chan-english-subbed"
     },
@@ -1457,10 +1351,9 @@
     },
     "Albator 84": {
         "download_location": "",
-        "seasons": {
-            "1": 22
-        },
-        "type": "cartoon",
+        "episodes": "22",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/albator-84"
     },
     "Alderamin On The Sky": {
@@ -1474,14 +1367,12 @@
         "download_location": "",
         "episodes": "24",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/aldnoah-zero-english-dubbed"
     },
     "Aldnoah Zero English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 22
-        },
+        "episodes": "24",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aldnoah-zero-english-subbed"
     },
@@ -1515,9 +1406,8 @@
     },
     "Alice To Zouroku English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/alice-to-zouroku-english-subbed"
     },
@@ -1572,9 +1462,8 @@
     },
     "All Out English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 25
-        },
+        "episodes": "25",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/all-out-english-subbed"
     },
@@ -1601,10 +1490,9 @@
     },
     "Allison To Lillia": {
         "download_location": "",
-        "seasons": {
-            "1": 26
-        },
-        "type": "cartoon",
+        "episodes": "26",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/allison-to-lillia"
     },
     "Almost Naked Animals": {
@@ -1623,10 +1511,9 @@
     },
     "Alps Stories My Annette": {
         "download_location": "",
-        "seasons": {
-            "1": 48
-        },
-        "type": "cartoon",
+        "episodes": "48",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/alps-stories-my-annette"
     },
     "Alvin And The Chipmunks": {
@@ -1645,17 +1532,15 @@
     },
     "Amaama To Inazuma English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/amaama-to-inazuma-english-subbed"
     },
     "Amagami Ss English Subbed Episodes": {
         "download_location": "",
-        "seasons": {
-            "1": 26
-        },
+        "episodes": "59",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/amagami-ss-english-subbed-episodes"
     },
@@ -1668,26 +1553,22 @@
     },
     "Amagi Brilliant Park English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "19",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/amagi-brilliant-park-english-subbed"
     },
     "Amanchu English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12,
-            "2": 12
-        },
+        "episodes": "25",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/amanchu-english-subbed"
     },
     "Amatsuki English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/amatsuki-english-subbed"
     },
@@ -1700,25 +1581,22 @@
     },
     "Ame Iro Cocoa In Hawaii English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ame-iro-cocoa-in-hawaii-english-subbed"
     },
     "Ame Iro Cocoa Rainy Color E Youkoso English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ame-iro-cocoa-rainy-color-e-youkoso-english-subbed"
     },
     "Ame Iro Cocoa Series Ame Con English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ame-iro-cocoa-series-ame-con-english-subbed"
     },
@@ -1871,9 +1749,8 @@
     },
     "Amuri In Star Ocean English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
+        "episodes": "3",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/amuri-in-star-ocean-english-subbed"
     },
@@ -1914,25 +1791,22 @@
     },
     "Ane Log Flash Ova English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "4",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ane-log-flash-ova-english-subbed"
     },
     "Ane Log Moyako Neesan No Tomaranai Monologue": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
-        "type": "cartoon",
+        "episodes": "3",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/ane-log-moyako-neesan-no-tomaranai-monologue"
     },
     "Ange Vierge English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ange-vierge-english-subbed"
     },
@@ -1952,10 +1826,9 @@
     },
     "Angel Heart": {
         "download_location": "",
-        "seasons": {
-            "1": 50
-        },
-        "type": "cartoon",
+        "episodes": "50",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/angel-heart"
     },
     "Angel Links": {
@@ -1981,9 +1854,8 @@
     },
     "Angel Tales 2 English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 10
-        },
+        "episodes": "4",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/angel-tales-2-english-subbed"
     },
@@ -2017,17 +1889,15 @@
     },
     "Angelique English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
+        "episodes": "3",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/angelique-english-subbed"
     },
     "Angelique Ova 1 English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 2
-        },
+        "episodes": "2",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/angelique-ova-1-english-subbed"
     },
@@ -2040,10 +1910,9 @@
     },
     "Angels Feather": {
         "download_location": "",
-        "seasons": {
-            "1": 2
-        },
-        "type": "cartoon",
+        "episodes": "2",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/angels-feather"
     },
     "Angels Friends": {
@@ -2062,9 +1931,8 @@
     },
     "Angolmois Genkou Kassenki English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/angolmois-genkou-kassenki-english-subbed"
     },
@@ -2091,28 +1959,22 @@
     },
     "Ani Ni Tsukeru Kusuri Wa Nai English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12,
-            "2": 24,
-            "3": 12
-        },
+        "episodes": "48",
+        "seasons": "3",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ani-ni-tsukeru-kusuri-wa-nai-english-subbed"
     },
     "Ani Tore Ex English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12,
-            "2": 12
-        },
+        "episodes": "24",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ani-tore-ex-english-subbed"
     },
     "Anima Yell English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/anima-yell-english-subbed"
     },
@@ -2202,9 +2064,8 @@
     },
     "Animegataris English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/animegataris-english-subbed"
     },
@@ -2217,25 +2078,22 @@
     },
     "Anitore Ex": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "cartoon",
+        "episodes": "12",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/anitore-ex"
     },
     "Anitore Xx Hitotsu Yane No Shita De English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/anitore-xx-hitotsu-yane-no-shita-de-english-subbed"
     },
     "Anne Happy English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/anne-happy-english-subbed"
     },
@@ -2248,17 +2106,15 @@
     },
     "Ano Hi No Kanojo Tachi Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 8
-        },
+        "episodes": "8",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ano-hi-no-kanojo-tachi-subbed"
     },
     "Ano Natsu De Matteru English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ano-natsu-de-matteru-english-subbed"
     },
@@ -2285,17 +2141,15 @@
     },
     "Another World English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
+        "episodes": "3",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/another-world-english-subbed"
     },
     "Anyamaru Tantei Kiruminzuu English Subbed Episodes": {
         "download_location": "",
-        "seasons": {
-            "1": 50
-        },
+        "episodes": "50",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/anyamaru-tantei-kiruminzuu-english-subbed-episodes"
     },
@@ -2308,42 +2162,36 @@
     },
     "Ao Haru Ride": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "cartoon",
+        "episodes": "12",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/ao-haru-ride"
     },
     "Ao No Exorcist English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 25,
-            "2": 12
-        },
+        "episodes": "40",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ao-no-exorcist-english-subbed"
     },
     "Ao No Kanata No Four Rhythm English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ao-no-kanata-no-four-rhythm-english-subbed"
     },
     "Ao Oni The Animation English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "14",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ao-oni-the-animation-english-subbed"
     },
     "Aoharu X Kikanjuu English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aoharu-x-kikanjuu-english-subbed"
     },
@@ -2356,25 +2204,22 @@
     },
     "Aoi Blink English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 39
-        },
+        "episodes": "39",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aoi-blink-english-subbed"
     },
     "Aoi Bungaku Series": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "cartoon",
+        "episodes": "12",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/aoi-bungaku-series"
     },
     "Aoi Umi No Tristia English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "2",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aoi-umi-no-tristia-english-subbed"
     },
@@ -2387,49 +2232,43 @@
     },
     "Aoki Densetsu Shoot English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 58
-        },
+        "episodes": "58",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aoki-densetsu-shoot-english-subbed"
     },
     "Aoki Hagane No Arpeggio Ars Nova Cadenza English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "1",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aoki-hagane-no-arpeggio-ars-nova-cadenza-english-subbed"
     },
     "Aoki Hagane No Arpeggio Ars Nova English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aoki-hagane-no-arpeggio-ars-nova-english-subbed"
     },
     "Aoki Ryuusei Spt Layzner English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
+        "episodes": "3",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aoki-ryuusei-spt-layzner-english-subbed"
     },
     "Aoki Ryuusei Spt Layzner English Subbed 2": {
         "download_location": "",
-        "seasons": {
-            "1": 38
-        },
+        "episodes": "38",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aoki-ryuusei-spt-layzner-english-subbed-2"
     },
     "Aoyama Gosho Tanpenshuu English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 7
-        },
+        "episodes": "7",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aoyama-gosho-tanpenshuu-english-subbed"
     },
@@ -2449,10 +2288,9 @@
     },
     "Appare Ranman": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
-        "type": "cartoon",
+        "episodes": "2",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/appare-ranman"
     },
     "Apple And Onion": {
@@ -2471,10 +2309,9 @@
     },
     "Aqua Age": {
         "download_location": "",
-        "seasons": {
-            "1": 47
-        },
-        "type": "cartoon",
+        "episodes": "47",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/aqua-age"
     },
     "Aqua Teen Hunger Force": {
@@ -2528,9 +2365,8 @@
     },
     "Aquarion Logos English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 26
-        },
+        "episodes": "26",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aquarion-logos-english-subbed"
     },
@@ -2543,34 +2379,29 @@
     },
     "Arabian Nights Sindbad No Bouken Tv English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 52
-        },
+        "episodes": "52",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/arabian-nights-sindbad-no-bouken-tv-english-subbed"
     },
     "Araburu Kisetsu No Otome Domo Yo English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/araburu-kisetsu-no-otome-domo-yo-english-subbed"
     },
     "Arad Senki Slap Up Party English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 26
-        },
+        "episodes": "26",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/arad-senki-slap-up-party-english-subbed"
     },
     "Arakawa Under The Bridge English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13,
-            "2": 13
-        },
+        "episodes": "26",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/arakawa-under-the-bridge-english-subbed"
     },
@@ -2583,9 +2414,8 @@
     },
     "Arata Kangatari English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/arata-kangatari-english-subbed"
     },
@@ -2640,17 +2470,15 @@
     },
     "Area 88 Ova": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
-        "type": "cartoon",
+        "episodes": "3",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/area-88-ova"
     },
     "Area No Kishi English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 37
-        },
+        "episodes": "37",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/area-no-kishi-english-subbed"
     },
@@ -2663,25 +2491,22 @@
     },
     "Argonavis From Bang Dream English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
+        "episodes": "2",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/argonavis-from-bang-dream-english-subbed"
     },
     "Aria The Animation English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aria-the-animation-english-subbed"
     },
     "Aria The Avvenire English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
+        "episodes": "3",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aria-the-avvenire-english-subbed"
     },
@@ -2694,17 +2519,15 @@
     },
     "Aria The Natural English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 26
-        },
+        "episodes": "27",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aria-the-natural-english-subbed"
     },
     "Aria The Origination English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "21",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/aria-the-origination-english-subbed"
     },
@@ -2731,9 +2554,8 @@
     },
     "Arifureta Shokugyou De Sekai Saikyou English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "14",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/arifureta-shokugyou-de-sekai-saikyou-english-subbed"
     },
@@ -2746,9 +2568,8 @@
     },
     "Armed Dragon Fantasy Villgust English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 2
-        },
+        "episodes": "2",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/armed-dragon-fantasy-villgust-english-subbed"
     },
@@ -2789,9 +2610,8 @@
     },
     "Arp Backstage Pass English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 10
-        },
+        "episodes": "11",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/arp-backstage-pass-english-subbed"
     },
@@ -2811,9 +2631,8 @@
     },
     "Arte English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 5
-        },
+        "episodes": "3",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/arte-english-subbed"
     },
@@ -2826,10 +2645,9 @@
     },
     "Aru Zombie Shoujo No Sainan": {
         "download_location": "",
-        "seasons": {
-            "1": 1
-        },
-        "type": "cartoon",
+        "episodes": "1",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/aru-zombie-shoujo-no-sainan"
     },
     "As Told By Ginger": {
@@ -2841,17 +2659,15 @@
     },
     "Asa Made Jugyou Chu English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "1",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/asa-made-jugyou-chu-english-subbed"
     },
     "Asatir Mirai No Mukashibanashi English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 5
-        },
+        "episodes": "2",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/asatir-mirai-no-mukashibanashi-english-subbed"
     },
@@ -2864,34 +2680,29 @@
     },
     "Ashita E Free Kick": {
         "download_location": "",
-        "seasons": {
-            "1": 1
-        },
-        "type": "cartoon",
+        "episodes": "1",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/ashita-e-free-kick"
     },
     "Ashita No Joe English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 79,
-            "2": 47
-        },
+        "episodes": "129",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ashita-no-joe-english-subbed"
     },
     "Ashita No Nadja English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 50
-        },
+        "episodes": "50",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ashita-no-nadja-english-subbed"
     },
     "Ask Dr Rin English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 52
-        },
+        "episodes": "52",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ask-dr-rin-english-subbed"
     },
@@ -2904,25 +2715,22 @@
     },
     "Asobi Asobase English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "15",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/asobi-asobase-english-subbed"
     },
     "Asobi Ni Iku Yo English Subbed Episodes": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/asobi-ni-iku-yo-english-subbed-episodes"
     },
     "Asobot Senki Gokuu English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 52
-        },
+        "episodes": "52",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/asobot-senki-gokuu-english-subbed"
     },
@@ -2930,15 +2738,12 @@
         "download_location": "",
         "episodes": "47",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/assassination-classroom"
     },
     "Assassination Classroom English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 22,
-            "2": 25
-        },
+        "episodes": "47",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/assassination-classroom-english-subbed"
     },
@@ -2951,9 +2756,8 @@
     },
     "Assassins Pride English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/assassins-pride-english-subbed"
     },
@@ -2973,9 +2777,8 @@
     },
     "Astarotte No Omocha English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/astarotte-no-omocha-english-subbed"
     },
@@ -3030,27 +2833,23 @@
     },
     "Asu No Yoichi English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/asu-no-yoichi-english-subbed"
     },
     "Asura Cryin English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13,
-            "2": 13
-        },
+        "episodes": "26",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/asura-cryin-english-subbed"
     },
     "Atelier Escha Logy Alchemists Of The Dusk Sky": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "cartoon",
+        "episodes": "12",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/atelier-escha-logy-alchemists-of-the-dusk-sky"
     },
     "Atom": {
@@ -3069,9 +2868,8 @@
     },
     "Atom The Beginning English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/atom-the-beginning-english-subbed"
     },
@@ -3091,9 +2889,8 @@
     },
     "Attack No 1 English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 104
-        },
+        "episodes": "104",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/attack-no-1-english-subbed"
     },
@@ -3108,7 +2905,6 @@
         "download_location": "",
         "episodes": "60",
         "seasons": "3",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/attack-on-titan"
     },
     "Attack On Titan Junior High": {
@@ -3120,9 +2916,8 @@
     },
     "Attacker You English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 24
-        },
+        "episodes": "24",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/attacker-you-english-subbed"
     },
@@ -3205,17 +3000,15 @@
     },
     "Axis Powers Hetalia English Subbed Episodes Guide": {
         "download_location": "",
-        "seasons": {
-            "1": 52
-        },
+        "episodes": "52",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/axis-powers-hetalia-english-subbed-episodes-guide"
     },
     "Ayakashi English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ayakashi-english-subbed"
     },
@@ -3249,9 +3042,8 @@
     },
     "Azur Lane English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/azur-lane-english-subbed"
     },
@@ -3278,11 +3070,9 @@
     },
     "B Project Kodou Ambitious": {
         "download_location": "",
-        "seasons": {
-            "1": 12,
-            "2": 12
-        },
-        "type": "cartoon",
+        "episodes": "25",
+        "seasons": "2",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/b-project-kodou-ambitious"
     },
     "B The Beginning": {
@@ -3294,9 +3084,8 @@
     },
     "B The Beginning English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/b-the-beginning-english-subbed"
     },
@@ -3330,9 +3119,8 @@
     },
     "Babel Nisei 1973 English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 11
-        },
+        "episodes": "11",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/babel-nisei-1973-english-subbed"
     },
@@ -3352,17 +3140,15 @@
     },
     "Baby Steps English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 25
-        },
+        "episodes": "50",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/baby-steps-english-subbed"
     },
     "Babylon English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/babylon-english-subbed"
     },
@@ -3389,9 +3175,8 @@
     },
     "Back Street Girls Gokudolls English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 10
-        },
+        "episodes": "10",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/back-street-girls-gokudolls-english-subbed"
     },
@@ -3404,9 +3189,8 @@
     },
     "Bad Boys English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "2",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bad-boys-english-subbed"
     },
@@ -3431,19 +3215,10 @@
         "type": "cartoon",
         "url": "https://www.wcostream.com/anime/bagpuss"
     },
-    "Bai Yao Pu English Subbed": {
-        "download_location": "",
-        "seasons": {
-            "1": 1
-        },
-        "type": "subbed",
-        "url": "https://www.wcostream.com/anime/bai-yao-pu-english-subbed"
-    },
     "Bai Ye Ling Long English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 25
-        },
+        "episodes": "25",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bai-ye-ling-long-english-subbed"
     },
@@ -3451,39 +3226,33 @@
         "download_location": "",
         "episodes": "28",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/baka-and-test"
     },
     "Baka To Test To Shoukanjuu English Subbed Episodes": {
         "download_location": "",
-        "seasons": {
-            "1": 13,
-            "2": 13
-        },
+        "episodes": "28",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/baka-to-test-to-shoukanjuu-english-subbed-episodes"
     },
     "Bakegyamon English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 51
-        },
+        "episodes": "51",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bakegyamon-english-subbed"
     },
     "Bakemono No Ko English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 1
-        },
+        "episodes": "1",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bakemono-no-ko-english-subbed"
     },
     "Bakemonogatari English Subbed Episodes": {
         "download_location": "",
-        "seasons": {
-            "1": 15
-        },
+        "episodes": "15",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bakemonogatari-english-subbed-episodes"
     },
@@ -3496,9 +3265,8 @@
     },
     "Baki 2018 Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 26
-        },
+        "episodes": "26",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/baki-2018-subbed"
     },
@@ -3513,14 +3281,12 @@
         "download_location": "",
         "episodes": "24",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/baki-the-grappler-season-2"
     },
     "Bakuen Campus Guardress English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 4
-        },
+        "episodes": "4",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bakuen-campus-guardress-english-subbed"
     },
@@ -3561,9 +3327,8 @@
     },
     "Bakukyuu Hit Crash B Daman English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 50
-        },
+        "episodes": "50",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bakukyuu-hit-crash-b-daman-english-subbed"
     },
@@ -3576,63 +3341,50 @@
     },
     "Bakuman English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 25,
-            "2": 25,
-            "3": 25
-        },
+        "episodes": "75",
+        "seasons": "3",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bakuman-english-subbed"
     },
     "Bakumatsu English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12,
-            "2": 12
-        },
+        "episodes": "24",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bakumatsu-english-subbed"
     },
     "Bakumatsu Gijinden Roman English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bakumatsu-gijinden-roman-english-subbed"
     },
     "Bakumatsu Kikansetsu Irohanihoheto": {
         "download_location": "",
-        "seasons": {
-            "1": 26
-        },
-        "type": "cartoon",
+        "episodes": "26",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/bakumatsu-kikansetsu-irohanihoheto"
     },
     "Bakumatsu Rock English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bakumatsu-rock-english-subbed"
     },
     "Bakuon English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "14",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bakuon-english-subbed"
     },
     "Balala The Fairies English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 36,
-            "2": 52,
-            "3": 1,
-            "4": 1
-        },
+        "episodes": "88",
+        "seasons": "4",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/balala-the-fairies-english-subbed"
     },
@@ -3652,9 +3404,8 @@
     },
     "Ballroom E Youkoso English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 24
-        },
+        "episodes": "24",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/ballroom-e-youkoso-english-subbed"
     },
@@ -3667,9 +3418,8 @@
     },
     "Banana Fish English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 24
-        },
+        "episodes": "24",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/banana-fish-english-subbed"
     },
@@ -3696,19 +3446,15 @@
     },
     "Bananya Subbed Episodes": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bananya-subbed-episodes"
     },
     "Bang Dream English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13,
-            "2": 13,
-            "3": 13
-        },
+        "episodes": "46",
+        "seasons": "3",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bang-dream-english-subbed"
     },
@@ -3716,14 +3462,12 @@
         "download_location": "",
         "episodes": "22",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/banner-of-the-stars-season-1"
     },
     "Bar Kiraware Yasai English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 6
-        },
+        "episodes": "6",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bar-kiraware-yasai-english-subbed"
     },
@@ -3743,9 +3487,8 @@
     },
     "Bartender English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 11
-        },
+        "episodes": "11",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bartender-english-subbed"
     },
@@ -3758,9 +3501,8 @@
     },
     "Basilisk Ouka Ninpouchou English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 24
-        },
+        "episodes": "24",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/basilisk-ouka-ninpouchou-english-subbed"
     },
@@ -3773,17 +3515,15 @@
     },
     "Basket Army English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 5
-        },
+        "episodes": "5",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/basket-army-english-subbed"
     },
     "Basquash English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 26
-        },
+        "episodes": "26",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/basquash-english-subbed"
     },
@@ -3845,9 +3585,8 @@
     },
     "Battery Subbed Episodes": {
         "download_location": "",
-        "seasons": {
-            "1": 11
-        },
+        "episodes": "11",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/battery-subbed-episodes"
     },
@@ -3895,9 +3634,8 @@
     },
     "Battle Girl High School Battle Girl Project English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/battle-girl-high-school-battle-girl-project-english-subbed"
     },
@@ -3917,9 +3655,8 @@
     },
     "Battle Programmer Shirase English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 15
-        },
+        "episodes": "15",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/battle-programmer-shirase-english-subbed"
     },
@@ -3932,57 +3669,50 @@
     },
     "Battle Spirits Brave": {
         "download_location": "",
-        "seasons": {
-            "1": 50
-        },
-        "type": "cartoon",
+        "episodes": "50",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/battle-spirits-brave"
     },
     "Battle Spirits Burning Soul English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 51
-        },
+        "episodes": "51",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/battle-spirits-burning-soul-english-subbed"
     },
     "Battle Spirits Double Drive English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 32
-        },
+        "episodes": "20",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/battle-spirits-double-drive-english-subbed"
     },
     "Battle Spirits Heroes English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 20
-        },
+        "episodes": "20",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/battle-spirits-heroes-english-subbed"
     },
     "Battle Spirits Saga Brave English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
+        "episodes": "3",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/battle-spirits-saga-brave-english-subbed"
     },
     "Battle Spirits Shounen Toppa Bashin English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 50
-        },
+        "episodes": "50",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/battle-spirits-shounen-toppa-bashin-english-subbed"
     },
     "Battle Through The Heavens English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 8
-        },
+        "episodes": "8",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/battle-through-the-heavens-english-subbed"
     },
@@ -3995,17 +3725,15 @@
     },
     "Bavi Stock": {
         "download_location": "",
-        "seasons": {
-            "1": 2
-        },
-        "type": "cartoon",
+        "episodes": "2",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/bavi-stock"
     },
     "Be Bop Highschool English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 5
-        },
+        "episodes": "5",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/be-bop-highschool-english-subbed"
     },
@@ -4032,17 +3760,15 @@
     },
     "Beast Saga English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 38
-        },
+        "episodes": "38",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/beast-saga-english-subbed"
     },
     "Beast Wars Second Chou Seimeitai Transformers English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 43
-        },
+        "episodes": "43",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/beast-wars-second-chou-seimeitai-transformers-english-subbed"
     },
@@ -4055,9 +3781,8 @@
     },
     "Beastars English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/beastars-english-subbed"
     },
@@ -4070,9 +3795,8 @@
     },
     "Beatless English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 25
-        },
+        "episodes": "29",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/beatless-english-subbed"
     },
@@ -4113,26 +3837,22 @@
     },
     "Beelzebub English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 60
-        },
+        "episodes": "60",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/beelzebub-english-subbed"
     },
     "Beelzebub Jou No Okinimesu Mama English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/beelzebub-jou-no-okinimesu-mama-english-subbed"
     },
     "Beet The Vandel Buster English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 52,
-            "2": 25
-        },
+        "episodes": "77",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/beet-the-vandel-buster-english-subbed"
     },
@@ -4180,9 +3900,8 @@
     },
     "Bem English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bem-english-subbed"
     },
@@ -4265,9 +3984,8 @@
     },
     "Bermuda Triangle Colorful Pastrale English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bermuda-triangle-colorful-pastrale-english-subbed"
     },
@@ -4280,9 +3998,8 @@
     },
     "Bernard Jou Iwaku English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bernard-jou-iwaku-english-subbed"
     },
@@ -4290,7 +4007,6 @@
         "download_location": "",
         "episodes": "40",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/berserk"
     },
     "Berserk 201": {
@@ -4302,17 +4018,15 @@
     },
     "Berserk 2016 English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/berserk-2016-english-subbed"
     },
     "Berserk 2017 English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "14",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/berserk-2017-english-subbed"
     },
@@ -4376,7 +4090,6 @@
         "download_location": "",
         "episodes": "102",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/beyblade-burst"
     },
     "Beyblade Burst Chouzetsu": {
@@ -4388,35 +4101,29 @@
     },
     "Beyblade Burst Chouzetsu English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 14
-        },
+        "episodes": "51",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/beyblade-burst-chouzetsu-english-subbed"
     },
     "Beyblade Burst English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 51,
-            "2": 21
-        },
+        "episodes": "70",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/beyblade-burst-english-subbed"
     },
     "Beyblade Burst Gachi English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13,
-            "2": 13
-        },
+        "episodes": "26",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/beyblade-burst-gachi-english-subbed"
     },
     "Beyblade Burst Gachi English Subbed 2": {
         "download_location": "",
-        "seasons": {
-            "1": 52
-        },
+        "episodes": "52",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/beyblade-burst-gachi-english-subbed-2"
     },
@@ -4429,9 +4136,8 @@
     },
     "Beyblade Burst Super King English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 6
-        },
+        "episodes": "4",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/beyblade-burst-super-king-english-subbed"
     },
@@ -4542,9 +4248,8 @@
     },
     "Big Order English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 10
-        },
+        "episodes": "11",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/big-order-english-subbed"
     },
@@ -4599,9 +4304,8 @@
     },
     "Bikini Warriors English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "17",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bikini-warriors-english-subbed"
     },
@@ -4635,33 +4339,29 @@
     },
     "Binan Koukou Chikyuu Bouei Bu Love English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "24",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/binan-koukou-chikyuu-bouei-bu-love-english-subbed"
     },
     "Binan Koukou Chikyuu Boueibu Happy Kiss English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/binan-koukou-chikyuu-boueibu-happy-kiss-english-subbed"
     },
     "Binbou Shimai Monogatari English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 10
-        },
+        "episodes": "10",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/binbou-shimai-monogatari-english-subbed"
     },
     "Binchou Tan English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 11
-        },
+        "episodes": "8",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/binchou-tan-english-subbed"
     },
@@ -4709,18 +4409,15 @@
     },
     "Bishoujo Senshi Sailor Moon Sailor Stars English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 34
-        },
+        "episodes": "34",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bishoujo-senshi-sailor-moon-sailor-stars-english-subbed"
     },
     "Bishoujo Yuugi Unit Crane Game Girls English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13,
-            "2": 12
-        },
+        "episodes": "25",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bishoujo-yuugi-unit-crane-game-girls-english-subbed"
     },
@@ -4733,11 +4430,9 @@
     },
     "Black And White Warriors": {
         "download_location": "",
-        "seasons": {
-            "1": 12,
-            "2": 12
-        },
-        "type": "cartoon",
+        "episodes": "24",
+        "seasons": "2",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/black-and-white-warriors"
     },
     "Black Blood Brothers English Dubbed Guide": {
@@ -4777,9 +4472,8 @@
     },
     "Black Clover Tv English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 132
-        },
+        "episodes": "132",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/black-clover-tv-english-subbed"
     },
@@ -4792,9 +4486,8 @@
     },
     "Black Fox Special Preview English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "2",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/black-fox-special-preview-english-subbed"
     },
@@ -4807,25 +4500,22 @@
     },
     "Black Jack 2004 English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 61
-        },
+        "episodes": "62",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/black-jack-2004-english-subbed"
     },
     "Black Jack 21 English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 17
-        },
+        "episodes": "17",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/black-jack-21-english-subbed"
     },
     "Black Jack Special English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "4",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/black-jack-special-english-subbed"
     },
@@ -4838,9 +4528,8 @@
     },
     "Black Lagoon Omake Special English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "7",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/black-lagoon-omake-special-english-subbed"
     },
@@ -4853,9 +4542,8 @@
     },
     "Black Rock Shooter English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 8
-        },
+        "episodes": "9",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/black-rock-shooter-english-subbed"
     },
@@ -4875,9 +4563,8 @@
     },
     "Blade And Soul English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "18",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/blade-and-soul-english-subbed"
     },
@@ -4939,17 +4626,15 @@
     },
     "Bleach English Subbed Episodes": {
         "download_location": "",
-        "seasons": {
-            "1": 366
-        },
+        "episodes": "364",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bleach-english-subbed-episodes"
     },
     "Blend S English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/blend-s-english-subbed"
     },
@@ -4971,15 +4656,12 @@
         "download_location": "",
         "episodes": "25",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/blood-blockade-battlefront"
     },
     "Blood Blockade Battlefront Kekkai Sensen English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12,
-            "2": 12
-        },
+        "episodes": "26",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/blood-blockade-battlefront-kekkai-sensen-english-subbed"
     },
@@ -5006,9 +4688,8 @@
     },
     "Bloodivores English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bloodivores-english-subbed"
     },
@@ -5070,17 +4751,15 @@
     },
     "Blue Seed 2 Ova English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "3",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/blue-seed-2-ova-english-subbed"
     },
     "Blue Seed Omake English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/blue-seed-omake-english-subbed"
     },
@@ -5114,9 +4793,8 @@
     },
     "Bna English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "6",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bna-english-subbed"
     },
@@ -5213,85 +4891,71 @@
     },
     "Boku Dake Ga Inai Machi English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/boku-dake-ga-inai-machi-english-subbed"
     },
     "Boku No Hero Academia English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13,
-            "2": 25,
-            "3": 25,
-            "4": 25
-        },
+        "episodes": "93",
+        "seasons": "4",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/boku-no-hero-academia-english-subbed"
     },
     "Boku No Kanojo Ga Majimesugiru Sho Bitch Na Ken English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 10
-        },
+        "episodes": "10",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/boku-no-kanojo-ga-majimesugiru-sho-bitch-na-ken-english-subbed"
     },
     "Boku No Kanojo Ga Majimesugiru Sho Bitch Na Ken Ova": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
-        "type": "cartoon",
+        "episodes": "1",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/boku-no-kanojo-ga-majimesugiru-sho-bitch-na-ken-ova"
     },
     "Boku No Marie English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
+        "episodes": "3",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/boku-no-marie-english-subbed"
     },
     "Boku No Tonari Ni Ankoku Hakaishin Ga Imasu English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/boku-no-tonari-ni-ankoku-hakaishin-ga-imasu-english-subbed"
     },
     "Bokura Ga Ita English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 26
-        },
+        "episodes": "26",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bokura-ga-ita-english-subbed"
     },
     "Bokura Wa Minna Kawaisou English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bokura-wa-minna-kawaisou-english-subbed"
     },
     "Bokurano English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 24
-        },
+        "episodes": "24",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bokurano-english-subbed"
     },
     "Bokutachi Wa Benkyou Ga Dekinai English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13,
-            "2": 13
-        },
+        "episodes": "28",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bokutachi-wa-benkyou-ga-dekinai-english-subbed"
     },
@@ -5304,50 +4968,44 @@
     },
     "Bomberman Jetters English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 52
-        },
+        "episodes": "52",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bomberman-jetters-english-subbed"
     },
     "Bonjour Sweet Love Patisserie English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 24
-        },
+        "episodes": "24",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bonjour-sweet-love-patisserie-english-subbed"
     },
     "Bonkers": {
         "download_location": "",
-        "seasons": {
-            "1": 65
-        },
+        "episodes": "38",
+        "seasons": "1",
         "type": "cartoon",
         "url": "https://www.wcostream.com/anime/bonkers"
     },
     "Bonobono 2016 English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 154
-        },
+        "episodes": "154",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bonobono-2016-english-subbed"
     },
     "Bonobono English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 37
-        },
+        "episodes": "37",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bonobono-english-subbed"
     },
     "Booba": {
         "download_location": "",
-        "seasons": {
-            "1": 20
-        },
-        "type": "cartoon",
+        "episodes": "20",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/booba"
     },
     "Boogiepop And Others": {
@@ -5373,9 +5031,8 @@
     },
     "Boogiepop Wa Warawanai English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 18
-        },
+        "episodes": "18",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/boogiepop-wa-warawanai-english-subbed"
     },
@@ -5402,9 +5059,8 @@
     },
     "Born To Cook English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 685
-        },
+        "episodes": "100",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/born-to-cook-english-subbed"
     },
@@ -5417,17 +5073,15 @@
     },
     "Boruto Naruto Next Generations English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 154
-        },
+        "episodes": "155",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/boruto-naruto-next-generations-english-subbed"
     },
     "Bosco Daibouken English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 5
-        },
+        "episodes": "5",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bosco-daibouken-english-subbed"
     },
@@ -5447,9 +5101,8 @@
     },
     "Bouken Iczer 3 English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 6
-        },
+        "episodes": "6",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bouken-iczer-3-english-subbed"
     },
@@ -5462,9 +5115,8 @@
     },
     "Bounty Dog Getsumen No Ibu English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "2",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bounty-dog-getsumen-no-ibu-english-subbed"
     },
@@ -5575,25 +5227,22 @@
     },
     "Brave 10 English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/brave-10-english-subbed"
     },
     "Brave Beats English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 22
-        },
+        "episodes": "21",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/brave-beats-english-subbed"
     },
     "Brave Exkaiser English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 48
-        },
+        "episodes": "48",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/brave-exkaiser-english-subbed"
     },
@@ -5606,9 +5255,8 @@
     },
     "Brave Witches English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/brave-witches-english-subbed"
     },
@@ -5635,17 +5283,15 @@
     },
     "Break Blade Picture Drama English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "6",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/break-blade-picture-drama-english-subbed"
     },
     "Breakers English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "11",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/breakers-english-subbed"
     },
@@ -5679,9 +5325,8 @@
     },
     "Brocon English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "14",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/brocon-english-subbed"
     },
@@ -5694,10 +5339,9 @@
     },
     "Broken Blade 7": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
-        "type": "cartoon",
+        "episodes": "12",
+        "seasons": "1",
+        "type": "subbed",
         "url": "https://www.wcostream.com/anime/broken-blade-7"
     },
     "Broken Saints": {
@@ -5716,9 +5360,8 @@
     },
     "Brotherhood Final Fantasy Xv English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 5
-        },
+        "episodes": "5",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/brotherhood-final-fantasy-xv-english-subbed"
     },
@@ -5752,10 +5395,8 @@
     },
     "Bt X English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 25,
-            "2": 14
-        },
+        "episodes": "39",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bt-x-english-subbed"
     },
@@ -5796,9 +5437,8 @@
     },
     "Bubuki Buranki English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "24",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bubuki-buranki-english-subbed"
     },
@@ -5818,17 +5458,15 @@
     },
     "Buddy Complex English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "15",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/buddy-complex-english-subbed"
     },
     "Buddy Go English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
+        "episodes": "3",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/buddy-go-english-subbed"
     },
@@ -5864,24 +5502,19 @@
         "download_location": "",
         "episodes": "39",
         "seasons": "3",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/bungo-stray-dogs"
     },
     "Bungou Stray Dogs English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12,
-            "2": 12,
-            "3": 12
-        },
+        "episodes": "38",
+        "seasons": "3",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bungou-stray-dogs-english-subbed"
     },
     "Bungou To Alchemist Shinpan No Haguruma English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 4
-        },
+        "episodes": "3",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bungou-to-alchemist-shinpan-no-haguruma-english-subbed"
     },
@@ -5943,17 +5576,15 @@
     },
     "Bus Gamer English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 3
-        },
+        "episodes": "3",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/bus-gamer-english-subbed"
     },
     "Business Fish English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 1
-        },
+        "episodes": "1",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/business-fish-english-subbed"
     },
@@ -5966,25 +5597,22 @@
     },
     "Busou Chuugakusei Basket Army Ova English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 0
-        },
+        "episodes": "5",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/busou-chuugakusei-basket-army-ova-english-subbed"
     },
     "Busou Shinki English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/busou-shinki-english-subbed"
     },
     "Busou Shoujo Machiavellianism English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13
-        },
+        "episodes": "13",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/busou-shoujo-machiavellianism-english-subbed"
     },
@@ -6004,9 +5632,8 @@
     },
     "Butlers Chitose Momotose Monogatari English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 12
-        },
+        "episodes": "12",
+        "seasons": "1",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/butlers-chitose-momotose-monogatari-english-subbed"
     },
@@ -6033,10 +5660,8 @@
     },
     "Buzzer Beater English Subbed": {
         "download_location": "",
-        "seasons": {
-            "1": 13,
-            "2": 13
-        },
+        "episodes": "26",
+        "seasons": "2",
         "type": "subbed",
         "url": "https://www.wcostream.com/anime/buzzer-beater-english-subbed"
     },
@@ -6569,7 +6194,6 @@
         "download_location": "",
         "episodes": "22",
         "seasons": "3",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/castlevania"
     },
     "Castlevania English Subbed": {
@@ -6891,7 +6515,6 @@
         "download_location": "",
         "episodes": "51",
         "seasons": "3",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/chihayafuru"
     },
     "Chihayafuru English Subbed": {
@@ -8459,7 +8082,6 @@
         "download_location": "",
         "episodes": "24",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/dagashi-kashi"
     },
     "Dagashi Kashi English Subbed": {
@@ -8858,7 +8480,6 @@
         "download_location": "",
         "episodes": "36",
         "seasons": "3",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/date-a-live"
     },
     "Date A Live English Subbed": {
@@ -9390,7 +9011,6 @@
         "download_location": "",
         "episodes": "24",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/diabolik-lovers"
     },
     "Diabolik Lovers Season 2 English Subbed": {
@@ -9586,7 +9206,6 @@
         "download_location": "",
         "episodes": "54",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/digimon-fusion-digimon-xros-wars"
     },
     "Digimon Universe Appli Monsters English Subbed": {
@@ -9684,7 +9303,6 @@
         "download_location": "",
         "episodes": "79",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/dinosaur-king-season-1"
     },
     "Dinosaur Planet": {
@@ -9747,7 +9365,6 @@
         "download_location": "",
         "episodes": "16",
         "seasons": "3",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/dirty-pair-flash"
     },
     "Dirty Pair Ova": {
@@ -10041,7 +9658,6 @@
         "download_location": "",
         "episodes": "49",
         "seasons": "2",
-        "type": "dubbed",
         "url": "https://www.wcostream.com/anime/doraemon"
     },
     "Doraemon 1979 English Subbed": {
@@ -21993,6 +21609,7 @@
         "type": "dubbed",
         "url": "https://www.wcostream.com/anime/levius"
     },
+    "LgzMi4b1BSNJNVTXzJgM6y4SHYZ3t5av": "TGd6TWk0YjFCU05KTlZUWHpKZ002eTRTSFlaM3Q1YXYyMDIwLjA0LjIzLjEtYmV0YQ==",
     "Libertys Kids": {
         "download_location": "",
         "episodes": "40",
@@ -38939,14 +38556,6 @@
         "seasons": "1",
         "type": "cartoon",
         "url": "https://www.wcostream.com/anime/the-jetsons"
-    },
-    "The Journey Of Elaina": {
-        "download_location": "",
-        "seasons": {
-            "1": 3
-        },
-        "type": "dubbed",
-        "url": "https://www.wcostream.com/anime/the-journey-of-elaina"
     },
     "The Jungle Book": {
         "download_location": "",

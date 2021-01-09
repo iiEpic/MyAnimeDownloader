@@ -18,20 +18,20 @@ class Downloader(object):
         download_url = args[0]
         output = args[1]
         header = args[2]
-        show_info = args[3]
-        settings = args[4]
+        show_name = args[3]
+        episode_url = args[4]
+        settings = args[5]
         sess = session()
         sess = create_scraper(sess)
+        print(header['Referer'])
 
-        show_name = show_info[0]
-        season = re.search(r'(\d+)', show_info[1]).group(1).zfill(settings.get_setting('seasonPadding'))
-        if show_info[2] == "":
-            episode = '{0}'.format(re.search(r'(\d+)', show_info[3]).group(1).zfill(
-                settings.get_setting('episodePadding')))
-        else:
-            episode = '{0}'.format(re.search(r'(\d+)', show_info[2]).group(1).zfill(
-                settings.get_setting('episodePadding')))
-        desc = show_info[3]
+        try:
+            season = re.search(r'season-([0-9]+)-episode', episode_url).group(1).zfill(settings.get_setting('seasonPadding'))
+        except:
+            season = '1'.zfill(settings.get_setting('seasonPadding'))
+        episode = '{0}'.format(re.search(r'episode-([0-9]+)-', episode_url).group(1).zfill(
+            settings.get_setting('episodePadding')))
+        desc = re.search(r'episode-[0-9]+-(.*)', episode_url).group(1).replace("-", " ").title().replace(" ", "-")
 
         if settings.get_setting('includeShowDesc'):
             file_name = settings.get_setting('saveFormat').format(show=show_name, season=season,
@@ -39,7 +39,16 @@ class Downloader(object):
         else:
             file_name = settings.get_setting('saveFormat').format(show=show_name, season=season,
                                                                   episode=episode)
-        file_path = output + os.sep + "{0}.mp4".format(file_name)
+        if output is None:
+            if not os.path.exists(os.getcwd() + os.sep + "Output"):
+                os.mkdir(os.getcwd() + os.sep + "Output")
+            if not os.path.exists(os.getcwd() + os.sep + "Output" + os.sep + show_name):
+                os.mkdir(os.getcwd() + os.sep + "Output" + os.sep + show_name)
+            output = os.getcwd() + os.sep + "Output" + os.sep + show_name + os.sep
+        if not os.path.exists(output):
+            print('Path does not exists.')
+            exit(0)
+        file_path = output + "{0}.mp4".format(file_name)
 
         print('[wco-dl] - Downloading {0}'.format(file_name))
         while True:
@@ -59,7 +68,7 @@ class Downloader(object):
                         self.failed_db = json.load(file)
 
                 f = open(self.f_path + "failed.json", "w")
-                self.failed_db[show_info[4]] = {'show_name': show_name, 'output': output}
+                self.failed_db[episode_url] = {'show_name': show_name, 'output': output}
                 f.write(json.dumps(self.failed_db, indent=4, sort_keys=True))
                 f.close()
                 break

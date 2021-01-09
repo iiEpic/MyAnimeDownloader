@@ -2,3 +2,11 @@
 *.bat
 *.pyc
 tools/savedURL.json
+tools/savedLocations.json
+failed.json
+.idea/misc.xml
+.idea/modules.xml
+.idea/MyAnimeDownloader.iml
+.idea/vcs.xml
+.idea/workspace.xml
+Output/
