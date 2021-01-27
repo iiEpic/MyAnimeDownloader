@@ -18,8 +18,9 @@ sys.path.insert(0, parent_dir)
 
 class Gui(tkinter.Frame):
 
-    def __init__(self):
+    def __init__(self, settings):
         self.master = tkinter.Tk()
+        self.settings = settings
         super().__init__(self.master)
         self.version = __version__
         self.base_url = "https://github.com/EpicUnknown/MyAnimeDownloader/"
@@ -29,9 +30,6 @@ class Gui(tkinter.Frame):
         self.platform = sys.platform
         self.define_settings()
         self.new_frame.mainloop()
-
-    def hello(self):
-        print('Hello')
 
     def about(self):
         tkinter.messagebox.showinfo("About", "My Anime Downloader\nCreated by: iEpic\nVersion: {0}".format(
@@ -100,7 +98,7 @@ class Gui(tkinter.Frame):
         pass
 
     def search(self):
-        new_search = tools.search.Search()
+        new_search = tools.search.Search(self.settings)
         output = new_search.start()
 
         for item in output:

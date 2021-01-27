@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 """
@@ -73,7 +72,7 @@ class Main:
             exit(1)
 
         if args.gui:
-            run_gui = tools.gui.Gui()
+            run_gui = tools.gui.Gui(args.settings)
             exit(1)
 
         if args.verbose:
@@ -96,7 +95,6 @@ class Main:
         if args.nologin:
             args.username = ['username']
             args.password = ['password']
-
 
         if isinstance(args.type, list):
             args.type = args.type[0]

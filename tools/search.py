@@ -99,7 +99,7 @@ class Search:
         return info_array
 
     @staticmethod
-    def get_total_episodes_str( results):
+    def get_total_episodes_str(results):
         total = 0
         for key, value in results.items():
             total += int(value)
@@ -122,19 +122,22 @@ class Search:
         highest_season = 100
         highest_episode = 0
         for episode in episode_links:
-            if 'special' in episode['href'] or 'ova' in episode['href'] or 'movie' in episode['href'] \
-                    or 'episode' not in episode['href']:
-                continue
-            if 'season' in episode['href']:
-                result = re.search('-season-([0-9]+)-episode-([0-9]+)', episode['href'])
-                if int(result.group(1)) < highest_season:
-                    highest_season = int(result.group(1))
-                    if highest_season not in seasons:
-                        seasons[str(highest_season)] = int(result.group(2))
-            else:
-                result = re.search('-episode-([0-9]+)', episode['href'])
-                if int(result.group(1)) > highest_episode:
-                    highest_episode = int(result.group(1))
+            try:
+                if 'special' in episode['href'] or 'ova' in episode['href'] or 'movie' in episode['href'] \
+                        or 'episode' not in episode['href']:
+                    continue
+                if 'season' in episode['href']:
+                    result = re.search('-season-([0-9]+)-episode-([0-9]+)', episode['href'])
+                    if int(result.group(1)) < highest_season:
+                        highest_season = int(result.group(1))
+                        if highest_season not in seasons:
+                            seasons[str(highest_season)] = int(result.group(2))
+                else:
+                    result = re.search('-episode-([0-9]+)', episode['href'])
+                    if int(result.group(1)) > highest_episode:
+                        highest_episode = int(result.group(1))
+            except:
+                pass
         if '1' not in seasons:
             seasons['1'] = highest_episode
         return seasons

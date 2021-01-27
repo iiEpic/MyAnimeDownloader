@@ -1,9 +1,9 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import re
 import base64
 import requests
+import sys
 from bs4 import BeautifulSoup
 from downloader import *
 import urllib3
@@ -24,12 +24,48 @@ class WCOStream:
         self.build_urls()
 
     def build_urls(self):
-        base_url = self.show_info['url'].replace('anime/', '').replace('english-dubbed',
-                                                                       '').replace('english-subbed', '')
+        base_url = self.show_info['url'].replace('anime/', '').replace('-english-dubbed',
+                                                                       '').replace('-english-subbed', '')
         # Check if we are getting a specific season
         if self.args['season'] != 'All':
-            if self.args['season'] > self.show_info['seasons']:
+            if int(self.args['season'][0]) > len(self.show_info['seasons']):
                 pass
+
+        if self.args['newest']:
+            episode_url = f"{base_url}"
+            season = len(self.show_info['seasons'])
+            if season != 1:
+                episode_url += f"-season-{season}"
+
+            episode = self.show_info['seasons'][str(season)]
+            if self.show_info['type'] == 'cartoon':
+                episode_url += f'-episode-{episode}'
+            elif self.show_info['type'] == 'dubbed':
+                episode_url += f'-episode-{episode}-english-dubbed'
+            else:
+                episode_url += f'-episode-{episode}-english-subbed'
+
+            episode_page = self.request_c(url=episode_url)
+            if episode_page.ok:
+                download_url = self.get_download_url(episode_url)
+                if '480' in self.args['resolution']:
+                    download_url = download_url[0][1]
+                else:
+                    download_url = download_url[1][1]
+
+                self.header['Referer'] = episode_url
+                args = []
+                args.append(download_url)
+                args.append(self.args['output'])
+                args.append(self.header)
+                args.append(self.show_name)
+                args.append(episode_page.url)
+                args.append(self.args['settings'])
+                self.dl.wco_dl(args)
+                self.header.pop('Referer')
+            else:
+                print('Episode did not download, please report this on GitHub.')
+                sys.exit(1)
 
         if isinstance(self.args['range'], list):
             if '-' in self.args['range'][0]:
@@ -46,9 +82,9 @@ class WCOStream:
                 if self.show_info['type'] == 'cartoon':
                     episode_url = '{0}-episode-{1}'.format(base_url, episode)
                 elif self.show_info['type'] == 'dubbed':
-                    episode_url = '{0}-episode-{1}-english-dubbed'.format(base_url, episode)
+                    episode_url = '{0}episode-{1}-english-dubbed'.format(base_url, episode)
                 else:
-                    episode_url = '{0}-episode-{1}-english-subbed'.format(base_url, episode)
+                    episode_url = '{0}episode-{1}-english-subbed'.format(base_url, episode)
 
                 episode_page = self.request_c(url=episode_url)
 
