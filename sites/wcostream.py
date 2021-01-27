@@ -68,6 +68,7 @@ class WCOStream:
                 sys.exit(1)
 
         if isinstance(self.args['range'], list):
+            episode_url = f'{base_url}'
             if '-' in self.args['range'][0]:
                 ep_range = self.args['range'][0].split('-')
             elif 'All' not in self.args['range']:
@@ -76,26 +77,27 @@ class WCOStream:
                 ep_range.append(self.args['range'][0])
 
             if self.args['season'] != 'All':
-                print(self.args['season'])
+                episode_url += f"-season-{self.args['season'][0]}"
 
             for episode in range(int(ep_range[0]), int(ep_range[1])+1):
+                new_url = episode_url
                 if self.show_info['type'] == 'cartoon':
-                    episode_url = '{0}-episode-{1}'.format(base_url, episode)
+                    new_url += f'-episode-{episode}'
                 elif self.show_info['type'] == 'dubbed':
-                    episode_url = '{0}episode-{1}-english-dubbed'.format(base_url, episode)
+                    new_url += f'-episode-{episode}-english-dubbed'
                 else:
-                    episode_url = '{0}episode-{1}-english-subbed'.format(base_url, episode)
+                    new_url += f'-episode-{episode}-english-subbed'
 
-                episode_page = self.request_c(url=episode_url)
+                episode_page = self.request_c(url=new_url)
 
                 if episode_page.ok:
-                    download_url = self.get_download_url(episode_url)
+                    download_url = self.get_download_url(new_url)
                     if '480' in self.args['resolution']:
                         download_url = download_url[0][1]
                     else:
                         download_url = download_url[1][1]
 
-                    self.header['Referer'] = episode_url
+                    self.header['Referer'] = new_url
                     args = []
                     args.append(download_url)
                     args.append(self.args['output'])

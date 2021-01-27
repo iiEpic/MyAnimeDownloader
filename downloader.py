@@ -22,7 +22,6 @@ class Downloader(object):
         settings = args[5]
         sess = session()
         sess = create_scraper(sess)
-        print(header['Referer'])
 
         try:
             season = re.search(r'season-([0-9]+)-episode', episode_url).group(1).zfill(settings.get_setting('seasonPadding'))
@@ -38,6 +37,7 @@ class Downloader(object):
         else:
             file_name = settings.get_setting('saveFormat').format(show=show_name, season=season,
                                                                   episode=episode)
+
         if output is None:
             if not os.path.exists(os.getcwd() + os.sep + "Output"):
                 os.mkdir(os.getcwd() + os.sep + "Output")
